@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face { 
+    font-family: "CeraPro"; 
+    src: url("../fonts/CeraPRO-Light.woff2");
+    font-style: normal; 
+    font-weight: 400; 
+}
+
+body{
+    font-family: CeraPro, sans-serif;
+    font-weight: 400; 
+}
+p{
+    margin-top: 15px;
+}
+
+#wrapper{
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url("/img/bg-page.png");
+    max-width: 1224px;
+    min-height: 95vh;
+    background-size: cover;
+    display: grid;
+    gap: 15px 15px;
+    margin: 0 auto;
+    grid-template-rows: 100px auto auto 25px;
+}
+
+header{    
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.mainHeading{
+    margin-left: 100px;
+    color: white;
+}
+
+#logo{
+    max-width: 130px;
+    display: block;
+    flex: 0 1 30%;
+}
+
+.tiles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+}
+
+.tiles > .smTile{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: url("/img/bg-tile.png") no-repeat center/cover;
+    color: teal;
+    text-decoration: none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.smTile > .iconText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.smTile > .icon > .image{
+    width: 40%;  
+    margin: 0 auto;
+}
+
+.smTile > .icon > .image > .image-holder{
+    display: table-cell;
+    vertical-align: middle;
+}
+.smTile > .title{
+    height: 30%;
+    vertical-align: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1em;
+}
+
+.tiles > .lgTile{
+    display: block;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 1.2em;
+    background: url("/img/bg-tile.png") no-repeat center/cover;
+}
+#copy{
+    color: white;
+}
