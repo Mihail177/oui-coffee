@@ -1,0 +1,41 @@
+/* Removes the basic margin and padding that is automatically assigned to every site*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* The entirity of the about us section */
+.aboutus-section {
+    background-color: rgba(0, 101, 124, 1);
+    box-shadow: 0px 0px 60px 12px rgba(0, 0, 0, 0.52) inset;
+
+}
+
+/* Only the content in about us section */
+.aboutus-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 5rem;
+    gap: 0.3rem;
+}
+
+/* only the title which is in the about us content */
+#aboutus-title {
+
+    color: rgba(237, 229, 187, 1);
+    text-align: center;
+    font-family: Caveat;
+    font-weight: 400;
+    font-size: 4.68rem;
+    text-shadow: 0 0 6px white;
+}
+/* Only the text in about us content */
+#aboutus-text {
+    color: rgba(237, 229, 187, 1);
+    height: 50px;
+    width: 780px;
+}
