@@ -1,0 +1,28 @@
+/* Universal settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Added fonts */
+@font-face{
+    font-family: CircularStd;
+    src: url(../fonts/CircularStd-Book.otf);
+}
+/* Body background colour */
+body{
+    background-color: rgb(0, 101, 124);
+}
+/* Header logo */
+/* .headerPromo{
+    
+} */
+.headerPromo > img{
+    width: 11rem;
+    height: 6rem;
+}
+/* Promotion text box */
+.promoTxt{
+    font-family: CircularStd;
+    font-size: 11rem;
+}
