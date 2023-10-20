@@ -14,15 +14,20 @@ body{
     background-color: rgb(0, 101, 124);
 }
 /* Header logo */
-/* .headerPromo{
-    
-} */
+.headerPromo{
+    display: flex;
+    justify-content: center;
+}
 .headerPromo > img{
     width: 11rem;
     height: 6rem;
+    filter: drop-shadow(0 0 70px rgb(255, 244, 174));
 }
 /* Promotion text box */
 .promoTxt{
     font-family: CircularStd;
     font-size: 11rem;
+}
+.homeBtn{
+    background-color: white;
 }
