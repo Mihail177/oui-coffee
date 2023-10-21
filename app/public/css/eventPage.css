@@ -25,30 +25,26 @@ body {
 .headerLogo {
     width: 11rem;
     height: 6rem;
-    /* toFix: filter glow not working on logo */
-    /* filter: drop-shadow(0 0 70px rgb(255, 244, 174)); */
+    filter: drop-shadow(0 0 10px rgb(255, 244, 174));
 }
-/* Promotion grid */
-.promoGrid {
-    display: grid;
-    grid-template-columns: repeat(12 , 1fr);
-    grid-template-rows: repeat(12 , 1fr);
-    justify-content: space-evenly;
-    align-content: space-evenly;
-}
-/* Promotion text box */
+/* Promotion flexbox */
 .promoBox {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    grid-column: 5 / 9;
-    grid-row: 3 / 8;
+    row-gap: 1rem;
+/* toFix: responsivness is not there */
+    margin-top: 5%;
+    margin-left: 32%;
 }
+/* Promotion box content */
 .promoTxt {
     font-family: CircularStd;
     font-size: 10vw;
     font-weight: 450;
     white-space: nowrap;
     color: #FFF7E3;
+    text-align: center;
 }
 .promoSubHdr {
     font-family: Caveat;
@@ -56,9 +52,11 @@ body {
     font-weight: 400;
     color: #FFF7E3;
     text-align: center;
-    filter: drop-shadow(0 0 70px rgb(255, 244, 174));
+    text-shadow: 0 0 30px rgb(255, 244, 174);
 }
 .promoDesc {
+    width: 20rem;
+    align-self: center;
     font-family: CircularStd;
     font-size: 1rem;
     font-weight: 450;
@@ -68,6 +66,101 @@ body {
 .homeBtn {
     width: 8rem;
     height: 4rem;
-    background-color: white;
+    align-self: center;
+    padding-top: 1.2rem;
     text-align: center;
+    background-color: white;
+    font-family: CircularStd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(0, 101, 124);
+    text-decoration: none;
+    border-radius: 6rem;
+}
+/* background grid for illustrations */
+.bgGrid {
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: repeat(10 , 1fr);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+/* Background illustrations */
+.bgIcon1 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 7;
+    grid-row-start: 9;
+}.bgIcon2 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 8;
+    grid-row-start: 8;
+}.bgIcon3 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 8;
+    grid-row-start: 10;
+}.bgIcon4 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 9;
+    grid-row-start: 9;
+}.bgIcon5 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 10;
+    grid-row-start: 8;
+}.bgIcon6 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 11;
+    grid-row-start: 7;
+}.bgIcon7 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 12;
+    grid-row-start: 6;
+}.bgIcon8 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 10;
+    grid-row-start: 10;
+}.bgIcon9 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 11;
+    grid-row-start: 9;
+}.bgIcon10 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 12;
+    grid-row-start: 8;
+}.bgIcon11 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 12;
+    grid-row-start: 10;
 }
