@@ -9,6 +9,10 @@
     font-family: CircularStd;
     src: url(../fonts/CircularStd-Book.otf);
 }
+@font-face {
+    font-family: Caveat;
+    src: url(../fonts/Caveat-Regular.ttf);
+}
 /* Body background colour */
 body {
     background-color: rgb(0, 101, 124);
@@ -18,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
 }
-.headerPromo > img {
+.headerLogo {
     width: 11rem;
     height: 6rem;
     /* toFix: filter glow not working on logo */
@@ -29,16 +33,41 @@ body {
     display: grid;
     grid-template-columns: repeat(12 , 1fr);
     grid-template-rows: repeat(12 , 1fr);
+    justify-content: space-evenly;
+    align-content: space-evenly;
 }
 /* Promotion text box */
 .promoBox {
     display: flex;
     flex-direction: column;
+    grid-column: 5 / 9;
+    grid-row: 3 / 8;
 }
 .promoTxt {
     font-family: CircularStd;
-    font-size: 11rem;
+    font-size: 10vw;
+    font-weight: 450;
+    white-space: nowrap;
+    color: #FFF7E3;
+}
+.promoSubHdr {
+    font-family: Caveat;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #FFF7E3;
+    text-align: center;
+    filter: drop-shadow(0 0 70px rgb(255, 244, 174));
+}
+.promoDesc {
+    font-family: CircularStd;
+    font-size: 1rem;
+    font-weight: 450;
+    color: white;
+    text-align: center;
 }
 .homeBtn {
+    width: 8rem;
+    height: 4rem;
     background-color: white;
+    text-align: center;
 }
