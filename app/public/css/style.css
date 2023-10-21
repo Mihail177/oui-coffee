@@ -41,68 +41,87 @@
 
 /* WOTM SECTION STYLING */
 .wotmWrapper {
-  margin-top: 10%;
+    padding: 10% 7%;
 }
 
 .wotmH1 {
-  font-family: "Caveat";
-  font-weight: 400;
-  color: #00657c;
-  text-align: center;
-  letter-spacing: 0.0875rem;
-  padding: 5% 5% 2%;
-  font-size: 4.375rem;
+    font-family: 'Caveat';
+    font-weight: 400;
+    color: #00657C;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin: 0 0 4.6rem;
+    font-size: 4.4rem;
 }
 
 .blueButton {
-  width: 14.25rem;
-  height: 4.5625rem;
-  background-color: #00657c;
-  color: #fefbf4;
-  margin: auto;
-  border-radius: 6.25rem;
+    width: 14.3rem;
+    height: 4.6rem;
+    background-color: #00657C;
+    color: #FEFBF4;
+    margin: auto;
+    border-radius: 6.3rem;
 }
 
 .blueButton > p {
-  text-align: center;
-  font-size: 1.5625rem;
-  font-weight: 500;
-  padding-top: 7%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-top: 7%;
 }
 
 /* WOTM food items */
 .wotmSection {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  margin: 0 5% 5%;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 2%;
+    padding-bottom: 2.5rem;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.wotmFood {
+    width: 12rem;
+    height: 17rem;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: normal;
+    color: #00657C;
+}
+
+.wotmFood > img {
+    max-width: 12rem;
+}
+
+.wotmFood > p {
+    width: 100%;
+    margin-bottom: 2.5rem;
 }
 
 /* WOTM background */
 .wotm {
-  background-color: #fefbf4;
-  width: 94.5rem;
-  height: 50.6875rem;
-  overflow: hidden;
-  box-shadow: 0 0 51px inset rgba(0, 0, 0, 70%);
+    background-color: #FEFBF4;
+    width: 100%;
+    box-shadow: inset  0  60px 60px -60px #696868, inset  0 -60px 60px -60px #696868;
 }
 
 .wotmBackground {
-  transform: rotate(-42.512deg);
-  z-index: 0;
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  left: 50%;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+    transform: rotate(-42.512deg);
+    z-index: 0;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .wotmBackground > img {
-  opacity: 0.13;
-  width: 7.8125rem;
-  height: 5.75rem;
+    opacity: 0.13;
+    width: 7.8rem;
+    height: 5.8rem;
 }
 
 /*Menu styling*/
