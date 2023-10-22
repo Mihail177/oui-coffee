@@ -14,7 +14,7 @@
                     </div>
                     <div class='wotmFood'>
                         <p>Coffee</p>
-                        <img src='imgs/photos/whatsOnTheMenu/coffee.png' alt='coffee'>
+                        <img class='wotmCoffee' src='imgs/photos/whatsOnTheMenu/coffee.png' alt='coffee'>
                     </div>
                         <div class='wotmFood'>
                             <p>Tea</p>
