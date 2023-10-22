@@ -1,79 +1,46 @@
 <?php
-    function(whatsOnTheMenu){
-        echo "
-            <div class="wotm">
-                <div class="wotmWrapper">
-                    <h1 class="wotmH1">What's on the menu?</h1>
-                    <section class="wotmSection">
-                        <div class="wotmOne">
-                            <p>Food</p>
-                            <img src="" alt="food">
-                        </div>
-                        <div class="wotmTwo">
-                            <p>Pain croissant</p>
-                            <img src="" alt="croissant">
-                        </div>
-                        <div class="wotmThree">
-                            <p>Coffee</p>
-                            <img src="" alt="coffee">
-                        </div>
-                        <div class="wotmFour">
+    echo "
+        <div class='wotm'>
+            <div class='wotmWrapper'>
+                <h1 class='wotmH1'>What's on the menu?</h1>
+                <section class='wotmSection'>
+                    <div class='wotmFood'>
+                        <p>Food</p>
+                        <img src='imgs/photos/whatsOnTheMenu/frenchRagout.png' alt='food'>
+                    </div>
+                    <div class='wotmFood'>
+                        <p>Pain croissant</p>
+                        <img src='imgs/photos/whatsOnTheMenu/croissant.png' alt='croissant'>
+                    </div>
+                    <div class='wotmFood'>
+                        <p>Coffee</p>
+                        <img src='imgs/photos/whatsOnTheMenu/coffee.png' alt='coffee'>
+                    </div>
+                        <div class='wotmFood'>
                             <p>Tea</p>
-                            <img src="" alt="tea">
+                            <img src='imgs/photos/whatsOnTheMenu/tea.png' alt='tea'>
                         </div>
-                        <div class="wotmFive">
+                        <div class='wotmFood'>
                             <p>Sweets</p>
-                            <img src="" alt="meringue">
+                            <img src='imgs/photos/whatsOnTheMenu/meringue.png' alt='meringue'>
                         </div>
-                        <div class="wotmSix">
+                        <div class='wotmFood'>
                             <p>Cool drinks</p>
-                            <img src="" alt="lemonade">
+                            <img src='imgs/photos/whatsOnTheMenu/lemonade.png' alt='lemonade'>
                         </div>
-                    </section>
-                    <div class="blueButton">
-                        <p>Le Menu</p>
-                    </div>
-                    <div class="wotmBackground">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <div></div>
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <div></div>
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <div></div>
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                        <img src="../imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">
-                    </div>
-                </div>
+                </section>
+                <p class='blueButton'>Le Menu</p>
+                <div class='wotmBackground'>";
+                for ($i=0; $i<=3; $i++) {
+                    echo '<img src="imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">';
+                }
+                for($i=0; $i<=4; $i++){
+                    echo "<div></div>";
+                }
+                for($i=0; $i<=30; $i++){
+                    echo '<img src="imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">';
+                }"
             </div>
-        "
-    }
+        </div>
+    ";
 ?>
