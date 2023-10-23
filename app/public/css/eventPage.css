@@ -93,72 +93,80 @@ body {
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
-    grid-column-start: 7;
-    grid-row-start: 9;
-}.bgIcon2 {
+    grid-column-start: 6;
+    grid-row-start: 10;
+}
+.bgIcon2 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
-    grid-column-start: 8;
-    grid-row-start: 8;
+    grid-column-start: 7;
+    grid-row-start: 9;
 }.bgIcon3 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 8;
-    grid-row-start: 10;
+    grid-row-start: 8;
 }.bgIcon4 {
+    width: 7rem;
+    height: 5rem;
+    transform: rotate(-42deg);
+    opacity: 0.2;
+    grid-column-start: 8;
+    grid-row-start: 10;
+}.bgIcon5 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 9;
     grid-row-start: 9;
-}.bgIcon5 {
+}.bgIcon6 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 10;
     grid-row-start: 8;
-}.bgIcon6 {
+}.bgIcon7 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 11;
     grid-row-start: 7;
-}.bgIcon7 {
+}.bgIcon8 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 12;
     grid-row-start: 6;
-}.bgIcon8 {
+}.bgIcon9 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 10;
     grid-row-start: 10;
-}.bgIcon9 {
+}.bgIcon10 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 11;
     grid-row-start: 9;
-}.bgIcon10 {
+}.bgIcon11 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
     opacity: 0.2;
     grid-column-start: 12;
     grid-row-start: 8;
-}.bgIcon11 {
+}.bgIcon12 {
     width: 7rem;
     height: 5rem;
     transform: rotate(-42deg);
@@ -166,6 +174,7 @@ body {
     grid-column-start: 12;
     grid-row-start: 10;
 }
+/* Tweaks for small screens  */
 @media screen and (max-width: 700px) {
     * {
         overflow: hidden;
