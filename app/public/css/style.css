@@ -1,3 +1,12 @@
+/* Added fonts */
+@font-face {
+  font-family: CircularStd;
+  src: url(../fonts/CircularStd-Book.otf);
+}
+@font-face {
+  font-family: Caveat;
+  src: url(../fonts/Caveat-Regular.ttf);
+}
 /* Removes the basic margin and padding that is automatically assigned to every site*/
 * {
   margin: 0;
@@ -19,150 +28,149 @@
 }
 
 .pexels-chevanon-photography-33-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 96.55rem;
-    height: 62.25rem;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96.55rem;
+  height: 62.25rem;
+  object-fit: cover;
 }
 
 .header-child {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 94.5rem;
-    height: 62.25rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 94.5rem;
+  height: 62.25rem;
 }
 
 .component-2 {
-    background-color: white;
-    overflow: hidden;
+  background-color: white;
+  overflow: hidden;
 }
 
 .header-child {
-    background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .welcome1 {
-    position: absolute;
-    line-height: 11rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 11rem;
+  position: absolute;
+  line-height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 11rem;
 }
 
 .welcome {
-    top: 0.05rem;
-    left: 0;
-    width: 50.2rem;
-    filter: blur(20px);
+  top: 0.05rem;
+  left: 0;
+  width: 50.2rem;
+  filter: blur(20px);
 }
 
 .welcome1 {
-    top: 0;
-    left: 0.5rem;
-    width: 49.2rem;
+  top: 0;
+  left: 0.5rem;
+  width: 49.2rem;
 }
 
 .welcome-parent {
-    position: absolute;
-    top: 20rem;
-    left: 14.65rem;
-    width: 50.2rem;
-    height: 11.15rem;
+  position: absolute;
+  top: 20rem;
+  left: 14.65rem;
+  width: 50.2rem;
+  height: 11.15rem;
 }
 
 .bienvenue {
-    top: 31.3rem;
-    left: 55.45rem;
-    font-size: 4rem;
-    line-height: 11rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 14.2rem;
-    height: 3.75rem;
+  top: 31.3rem;
+  left: 55.45rem;
+  font-size: 4rem;
+  line-height: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.2rem;
+  height: 3.75rem;
 }
 
 .header-content-child {
-    position: absolute;
-    top: -1.30rem;
-    left: -1.30rem;
-    width: 88.3rem;
-    height: 57.9rem;
+  position: absolute;
+  top: -1.3rem;
+  left: -1.3rem;
+  width: 88.3rem;
+  height: 57.9rem;
 }
 
 .header-content {
-    top: 3.45rem;
-    left: 4.45rem;
-    width: 85.65rem;
-    height: 55.25rem;
+  top: 3.45rem;
+  left: 4.45rem;
+  width: 85.65rem;
+  height: 55.25rem;
 }
 
 .logo-02-6-icon {
-    position: absolute;
-    height: 155.55%;
-    width: 146%;
-    top: -27.8%;
-    right: -22.95%;
-    bottom: -27.8%;
-    left: -22.95%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    object-fit: cover;
+  position: absolute;
+  height: 155.55%;
+  width: 146%;
+  top: -27.8%;
+  right: -22.95%;
+  bottom: -27.8%;
+  left: -22.95%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .logo-02-6-icon {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .logo-02-4-parent {
-    position: absolute;
-    height: 85.75%;
-    width: 6.75%;
-    top: 7%;
-    right: 92.25%;
-    bottom: 7%;
-    left: 1%;
+  position: absolute;
+  height: 85.75%;
+  width: 6.75%;
+  top: 7%;
+  right: 92.25%;
+  bottom: 7%;
+  left: 1%;
 }
 
 .le-menu {
-    position: relative;
+  position: relative;
 }
 
 .about-us {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 .le-menu-parent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5rem;
 }
 
 .no-bg-component {
-    position: absolute;
-    top: 3.5rem;
-    left: 50%;
-    width: 81rem;
-    height: 5.25rem;
-    font-size: 3.13rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  width: 81rem;
+  height: 5.25rem;
+  font-size: 3.13rem;
 }
-
 
 /* header section end */
 
