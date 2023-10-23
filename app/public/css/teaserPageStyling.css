@@ -13,3 +13,23 @@
     font-family: Caveat;
     src: url(../fonts/Caveat-Regular.ttf);
 }
+/* Body background colour */
+body {
+    background-image: linear-gradient(#EEEAD6, #BAD3EE);
+}
+/* Header logo */
+.headerTeaser {
+    display: flex;
+    justify-content: center;
+}
+.headerLogo {
+    width: 10rem;
+    height: 6rem;
+}
+/* Teaser felxbox */
+.teaserFlex {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+/* Teaser content */
