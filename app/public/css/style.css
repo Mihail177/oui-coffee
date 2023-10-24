@@ -310,6 +310,7 @@ img.wotmCoffee {
   font-family: "Caveat";
   font-size: 4.375rem;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 .menuTrendingOrders {
   display: grid;
@@ -317,7 +318,7 @@ img.wotmCoffee {
   column-gap: 5rem;
   row-gap: 2rem;
   justify-content: center;
-  width: 65vw;
+  width: 60vw;
   margin-bottom: 7rem;
 }
 .menuView {
@@ -332,7 +333,7 @@ hr {
   width: 1.5rem;
 }
 .menuTrendingItems {
-  background-color: aqua;
+  background-color: white;
   padding: 1.5rem;
   border-radius: 1.5rem;
   display: flex;
@@ -340,6 +341,7 @@ hr {
   align-items: flex-start;
   gap: 0.5rem;
   position: relative;
+  backdrop-filter: blur(1.5rem);
 }
 .menuTrendingImgs {
   position: absolute;
@@ -356,18 +358,22 @@ hr {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-bottom: 4rem;  
 }
 .menuCategoriesNames {
   text-decoration: none;
   width: 8rem;
   padding: 1.5rem;
-  background-color: aqua;
+  background-color: white;
   border-radius: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #07143B;
+  box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  font-weight: 500;
 }
 
 /*Menu Styling*/
@@ -377,7 +383,7 @@ hr {
   gap: 4rem;
 }
 .menuItems {
-  background-color: aqua;
+  background-color: white;
   border-radius: 1.5rem;
   padding: 1.5rem;
   display: flex;
@@ -396,12 +402,19 @@ hr {
 }
 .menuTitle{
   text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Caveat";
+  margin-bottom: 1.5rem;
+  padding-top: 2rem;
 }
+
 .menuProducts{
   display: flex;
   justify-content: space-between;
   align-items:center;
   flex-shrink: 0;
+  color: #07143B;
 }
 .menuBtn {
   background-color: white;
@@ -419,4 +432,33 @@ hr {
 }
 .menuSpanRow2 {
   grid-row: span 2;
+}
+
+.menuBackgroundImg {
+background-image: url("../imgs\photos\menu\croissants.jpg");
+background-size: cover;
+background: rgba(245, 238, 210, 0.87);
+background-repeat: no-repeat;
+}
+.menuBackgroundClr{
+  background-color: rgba(186, 211, 238, 0.56);
+}
+
+.menuColorBlue{
+  color: #00657C;
+}
+
+.menuTrendingPrice {
+  font-weight: 500;
+}
+
+.menuTrendingSubTitle{
+  font-weight: 450;
+  font-size: 0.75rem;
+}
+
+.menuSubTitle{
+  color: #00657C99;
+  font-size: 0.85rem;
+  letter-spacing: 0.025rem;
 }
