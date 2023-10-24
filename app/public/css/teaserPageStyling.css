@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: CircularStd;
 }
 /* Added fonts */
 @font-face {
@@ -56,7 +57,6 @@ body {
 }
 /* Teaser flexbox content */
 .teaserTxt {
-    font-family: CirculatStd;
     font-weight: 450;
     font-size: 2.25rem;
     text-align: center;
@@ -70,7 +70,6 @@ body {
     color: #00657C;
 }
 .homeBtn {
-    font-family: CircularStd;
     font-weight: 500;
     font-size: 1.5rem;
     text-decoration: none;
@@ -91,79 +90,61 @@ body {
     align-content: space-evenly;
 }
 /* Background illustrations */
-.bgIcon1 {
+.bgIcon {
     width: 7rem;
     height: 5rem;
+}
+.bgIcon1 {
     transform: rotate(166deg);
     grid-column-start: 12;
     grid-row-start: 1;
 }
 .bgIcon2 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(32deg);
     grid-column-start: 2;
     grid-row-start: 2;
 }
 .bgIcon3 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(-32deg);
     grid-column-start: 4;
     grid-row-start: 1;
 }
 .bgIcon4 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(-111deg);
     grid-column-start: 10;
     grid-row-start: 2;
 }
 .bgIcon5 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(166deg);
     grid-column-start: 3;
     grid-row-start: 4;
 }
 .bgIcon6 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(101deg);
     grid-column-start: 1;
     grid-row-start: 5;
 }
 .bgIcon7 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(179deg);
     grid-column-start: 11;
     grid-row-start: 4;
 }
 .bgIcon8 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(163deg);
     grid-column-start: 3;
     grid-row-start: 6;
 }
 .bgIcon9 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(-46deg);
     grid-column-start: 10;
     grid-row-start: 6;
 }
 .bgIcon10 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(166deg);
     grid-column-start: 11;
     grid-row-start: 8;
 }
 .bgIcon11 {
-    width: 7rem;
-    height: 5rem;
     transform: rotate(-111deg);
     grid-column-start: 2;
     grid-row-start: 8;
@@ -190,7 +171,6 @@ body {
     text-align: center;
 }
 .footerBtn {
-    font-family: CircularStd;
     font-weight: 450;
     font-size: 1.5rem;
     text-decoration: none;
