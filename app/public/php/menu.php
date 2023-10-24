@@ -123,7 +123,7 @@ echo '
             <p>3.00</p>
           </div>
         </div>
-        <div class="menuItems menuSpanRow2 menuBackgroundImg" >
+        <div class="menuItems menuSpanRow2 menuBackgroundImg">
           <div class="menuSubitems">
             <h3 class="menuColorBlue menuTitle">100%</h3>
             <p class="menuSubTitle">HANDMADE PRODUCTS</p>
