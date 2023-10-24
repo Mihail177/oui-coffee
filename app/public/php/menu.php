@@ -192,7 +192,7 @@ echo '
               <p>Macarons</p>
               <p>6.00</p>
             </div>
-            <div>
+            <div class="menuSubProducts">
               <p>Chocolate</p>
               <p>Strawberry and cream</p>
               <p>Vanilla</p>
