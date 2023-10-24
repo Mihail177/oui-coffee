@@ -178,6 +178,20 @@ img.headerLogo {
   width: 780px;
 }
 
+.map-section {
+  background: linear-gradient(180deg, #167CEB 0%, #BAD3EE 0.01%, #9AC0DA 13.02%, #00657C 76.04%, #003744 100%);
+  box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
+}
+
+.copyrighttext {
+  display: flex;
+  background: #012E38;
+  align-items: center;
+  justify-content: center;
+  height: 5.125rem;
+  width: auto;
+}
+
 /* WOTM SECTION STYLING */
 .wotmWrapper {
   position: relative;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="aboutsection.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <title>Document</title>
 </head>
@@ -15,15 +15,15 @@
         </div>
     </div>  
 
-    <div id="map-section">
+    <div class="map-section">
         <div class="map">
-
+    <p> map</p>
         </div>
 
             <div class="timesandcontact">
 
             </div>
     </div>
-    
+    <div class="copyrighttext">&copy; Copyright 2023 - OUI</div>
 </body>
 </html>
