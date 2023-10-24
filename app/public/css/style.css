@@ -375,6 +375,10 @@ hr {
   letter-spacing: 0.02rem;
   font-weight: 500;
 }
+.menuCategoriesNames:hover,.menuCategoriesNames:focus{
+  background-color: rgba(186, 211, 238, 0.56);
+}
+
 
 /*Menu Styling*/
 .menuContainer {
@@ -461,4 +465,12 @@ background-repeat: no-repeat;
   color: #00657C99;
   font-size: 0.85rem;
   letter-spacing: 0.025rem;
+}
+
+.menuSubProducts{
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  color: #00000091;
+  margin-left: 1.25rem;
 }
