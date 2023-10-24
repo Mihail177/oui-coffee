@@ -179,6 +179,7 @@ img.headerLogo {
 }
 
 .map-section {
+  display: flex;
   background: linear-gradient(180deg, #167CEB 0%, #BAD3EE 0.01%, #9AC0DA 13.02%, #00657C 76.04%, #003744 100%);
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
