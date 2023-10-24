@@ -15,161 +15,131 @@
   font-family: "Circular Std";
 }
 
-/*header section*/
+/* header section start*/
 
 .header1 {
   position: relative;
+  overflow: hidden;
   width: 100%;
-  height: 62.25rem;
+  height: 60rem;
   text-align: center;
   font-size: 18.75rem;
   color: wheat;
-  font-family: Caveat;
+}
+
+.header1 * {
+  font-family: "Caveat";
 }
 
 .pexels-chevanon-photography-33-icon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 96.55rem;
-  height: 62.25rem;
+  width: 100%; 
+  height: 60rem;
   object-fit: cover;
 }
 
 .header-child {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 94.5rem;
-  height: 62.25rem;
+  width: 100%; 
+  height: 60rem;
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
-.component-2 {
-  background-color: white;
-  overflow: hidden;
-}
-
-.header-child {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.welcome1 {
-  position: absolute;
-  line-height: 11rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 11rem;
+.header-content {
+  width: 100%; 
+  height: 91%; 
 }
 
 .welcome {
-  top: 0.05rem;
-  left: 0;
-  width: 50.2rem;
-  filter: blur(20px);
-}
-
-.welcome1 {
-  top: 0;
-  left: 0.5rem;
-  width: 49.2rem;
-}
-
-.welcome-parent {
   position: absolute;
-  top: 20rem;
-  left: 14.65rem;
-  width: 50.2rem;
-  height: 11.15rem;
+  top: 15rem;
+  width: 100%;
+  font-size: 18.75rem;
+  font-weight: 400;
+  text-shadow: 0 0 30px #eeeba7a7;
 }
 
 .bienvenue {
-  top: 31.3rem;
-  left: 55.45rem;
   font-size: 4rem;
   line-height: 11rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: "Caveat";
+  font-weight: 100;
+  position: absolute;
+  top: 30rem;
+  right: 23rem;
   width: 14.2rem;
   height: 3.75rem;
 }
 
-.header-content-child {
+.no-bg-component {
   position: absolute;
-  top: -1.3rem;
-  left: -1.3rem;
-  width: 88.3rem;
-  height: 57.9rem;
-}
-
-.header-content {
-  top: 3.45rem;
-  left: 4.45rem;
-  width: 85.65rem;
-  height: 55.25rem;
-}
-
-.logo-02-6-icon {
-  position: absolute;
-  height: 155.55%;
-  width: 146%;
-  top: -27.8%;
-  right: -22.95%;
-  bottom: -27.8%;
-  left: -22.95%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.logo-02-6-icon {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 5%; 
+  left: 2.5%; 
+  width: 95%; 
+  height: 90%; 
 }
 
 .logo-02-4-parent {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo-02-4-parent > * {
   position: absolute;
-  height: 85.75%;
-  width: 6.75%;
-  top: 7%;
-  right: 92.25%;
-  bottom: 7%;
-  left: 1%;
+  filter: drop-shadow(0 0 10px yellow);
 }
 
-.le-menu {
-  position: relative;
+.logo-02-2-icon {
+  bottom: 0;
+  right: 0;
+  rotate: 45deg;
 }
 
-.about-us {
-  line-height: 2rem;
+.logo-02-4-icon {
+  bottom: 0;
+  left: 0;
+  rotate: 135deg;
 }
 
-.le-menu-parent {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.logo-02-6-icon {
+  top: 0;
+  right: 0;
+  rotate: -45deg;
+}
+
+.logo-02-8-icon {
+  top: 0;
+  left: 0;
+  rotate: -135deg;
+}
+
+.le-menu-parent,
+.headerDropdown {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
   align-items: center;
-  justify-content: flex-end;
   gap: 2.5rem;
 }
 
-.no-bg-component {
-  position: absolute;
-  top: 3.5rem;
-  left: 50%;
-  width: 81rem;
+.le-menu-parent {
+  position: sticky;
+  top: 7%; 
+  left: 0; 
+  z-index: 1;
+  width: 100vw;
   height: 5.25rem;
+  justify-content: space-between;
   font-size: 3.13rem;
+  padding: 0 7%;
+}
+
+img.headerLogo {
+  width: 10%;
 }
 
 /* header section end */
