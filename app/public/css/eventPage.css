@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: CircularStd;
 }
 /* Added fonts */
 @font-face {
@@ -41,7 +42,6 @@ body {
 }
 /* Promotion box content */
 .promoTxt {
-    font-family: CircularStd;
     font-size: 10vw;
     font-weight: 450;
     white-space: nowrap;
@@ -59,7 +59,6 @@ body {
 .promoDesc {
     width: 20rem;
     align-self: center;
-    font-family: CircularStd;
     font-size: 1rem;
     font-weight: 450;
     color: white;
@@ -72,7 +71,6 @@ body {
     padding-top: 1.2rem;
     text-align: center;
     background-color: white;
-    font-family: CircularStd;
     font-size: 1.5rem;
     font-weight: 500;
     color: rgb(0, 101, 124);
@@ -88,89 +86,47 @@ body {
     align-content: space-evenly;
 }
 /* Background illustrations */
-.bgIcon1 {
+.bgIcon {
     width: 7rem;
     height: 5rem;
-    transform: rotate(-42deg);
     opacity: 0.2;
+    transform: rotate(-42deg);
+}
+.bgIcon1 {
     grid-column-start: 6;
     grid-row-start: 10;
 }
 .bgIcon2 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 7;
     grid-row-start: 9;
 }.bgIcon3 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 8;
     grid-row-start: 8;
 }.bgIcon4 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 8;
     grid-row-start: 10;
 }.bgIcon5 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 9;
     grid-row-start: 9;
 }.bgIcon6 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 10;
     grid-row-start: 8;
 }.bgIcon7 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 11;
     grid-row-start: 7;
 }.bgIcon8 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 12;
     grid-row-start: 6;
 }.bgIcon9 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 10;
     grid-row-start: 10;
 }.bgIcon10 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 11;
     grid-row-start: 9;
 }.bgIcon11 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 12;
     grid-row-start: 8;
 }.bgIcon12 {
-    width: 7rem;
-    height: 5rem;
-    transform: rotate(-42deg);
-    opacity: 0.2;
     grid-column-start: 12;
     grid-row-start: 10;
 }
