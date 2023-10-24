@@ -409,11 +409,10 @@ hr {
 }
 
 .menuBackgroundImg {
-background-image: url("../imgs\photos\menu\croissants.jpg");
+background: linear-gradient(to top, #f5eed2e3, #f5eed2de), url('../imgs/photos/menu/croissants.jpg') no-repeat top center;
 background-size: cover;
-background: rgba(245, 238, 210, 0.87);
-background-repeat: no-repeat;
 }
+
 .menuBackgroundClr{
   background-color: rgba(186, 211, 238, 0.56);
 }
