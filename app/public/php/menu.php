@@ -67,28 +67,28 @@ echo '
       </article>
       <article class="menuContainer">
         <div class="menuItems menuSpanColumn2">
-          <h4>coffee</h4>
-          <div>
+          <h4 class="menuTitle">coffee</h4>
+          <div class="menuProducts">
             <p>Mocha</p>
             <p>4.00</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Espresso</p>
             <p>1.32</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Americano</p>
             <p>2.20</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Flat White</p>
             <p>4.20</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Cappucino</p>
             <p>3.20</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Latte</p>
             <p>4.00</p>
           </div>
@@ -101,24 +101,24 @@ echo '
           <a href="#" class="menuBtn">MORE INFORMATION</a>
         </div>
         <div class="menuItems menuSpanColumnFull">
-          <h4>tea</h4>
-          <div>
+          <h4 class="menuTitle">tea</h4>
+          <div class="menuProducts">
             <p>Black Tea</p>
             <p>1.32</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Green Tea</p>
             <p>1.32</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Herbal Tea</p>
             <p>2.20</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Jasmine Tea</p>
             <p>2.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Rooibos</p>
             <p>3.00</p>
           </div>
@@ -131,64 +131,64 @@ echo '
           <a href="#" class="menuBtn">ABOUT US</a>
         </div>
         <div class="menuItems menuSpanColumn2">
-          <h4>croissant (petite pain)</h4>
-          <div>
+          <h4 class="menuTitle">croissant (petite pain)</h4>
+          <div class="menuProducts">
             <p>Natural/Plain</p>
             <p>1.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Butter</p>
             <p>2.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Herb butter</p>
             <p>2.80</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Jam or Nutella</p>
             <p>3.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Brie or Camembert</p>
             <p>4.50</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Cheese with walnuts</p>
             <p>4.70</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Smoked Salmon</p>
             <p>5.80</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Cream Cheese</p>
             <p>4.80</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Soft goat cheese</p>
             <p>4.80</p>
           </div>
         </div>
         <div class="menuItems menuSpanColumn2">
-          <h4>sweets</h4>
-          <div>
+          <h4 class="menuTitle">sweets</h4>
+          <div class="menuProducts">
             <p>Eclair</p>
             <p>1.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Millefeuille</p>
             <p>2.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Paris-brest</p>
             <p>2.80</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Cream puffs</p>
             <p>3.30</p>
           </div>
           <div>
-            <div>
+            <div class="menuProducts">
               <p>Macarons</p>
               <p>6.00</p>
             </div>
@@ -203,47 +203,47 @@ echo '
           </div>
         </div>
         <div class="menuItems menuSpanColumnFull">
-          <h4>food</h4>
-          <div>
+          <h4 class="menuTitle">food</h4>
+          <div class="menuProducts">
             <p>Tuna salad</p>
             <p>4.80</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Egg salad</p>
             <p>4.80</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Hummus</p>
             <p>4.60</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>French ragout</p>
             <p>4.70</p>
           </div>
         </div>
         <div class="menuItems menuSpanColumnFull">
-          <h4>cool drinks</h4>
-          <div>
+          <h4 class="menuTitle">cool drinks</h4>
+          <div class="menuProducts">
             <p>Home-made lemonade</p>
             <p>3.00</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Jus dorange</p>
             <p>3.30</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Apple juice</p>
             <p>2.20</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Ice tea</p>
             <p>2.32</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Flat water</p>
             <p>2.00</p>
           </div>
-          <div>
+          <div class="menuProducts">
             <p>Sparkling water</p>
             <p>2.50</p>
           </div>
