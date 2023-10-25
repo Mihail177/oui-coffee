@@ -145,13 +145,13 @@ img.headerLogo {
 /* header section end */
 
 /* The entirity of the about us section */
-.aboutus-section {
+.aboutusSection {
   background-color: rgba(0, 101, 124, 1);
   box-shadow: 0px 0px 60px 12px rgba(0, 0, 0, 0.52) inset;
 }
 
 /* Only the content in about us section */
-.aboutus-content {
+.aboutusContent {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +162,7 @@ img.headerLogo {
 }
 
 /* only the title which is in the about us content */
-#aboutus-title {
+#aboutusTitle {
   color: rgba(237, 229, 187, 1);
   text-align: center;
   font-family: Caveat;
@@ -172,13 +172,13 @@ img.headerLogo {
 }
 
 /* Only the text in about us content */
-#aboutus-text {
+#aboutusText {
   color: rgba(237, 229, 187, 1);
   height: 50px;
   width: 780px;
 }
 
-.map-section {
+.mapSection {
   display: flex;
   background: linear-gradient(
     180deg,
@@ -191,7 +191,7 @@ img.headerLogo {
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
 
-.copyrighttext {
+.copyrightText {
   display: flex;
   background: #012e38;
   align-items: center;
