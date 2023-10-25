@@ -11,7 +11,9 @@
     <section>
       <?php include 'php/whatsOnTheMenu.php';?>
     </section>
-    <article></article>
+    <article><?php include 'php/menu.php'; MenuSection();?>
+  
+  </article>
     <section></section>
     <footer></footer>
   </body>
