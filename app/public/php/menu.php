@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-</html>
+
 <?php
 function MenuSection(){
 echo '
@@ -18,42 +10,42 @@ echo '
           <p>Rooibos Tea</p>
           <hr />
           <p class="menuColorBlue menuTrendingPrice">3.00</p>
-          <img src="../imgs\photos\menu\trending-image-1.png" alt="ceai" class="menuTrendingImgs" />
+          <img src="imgs\photos\menu\trending-image-1.png" alt="ceai" class="menuTrendingImgs" />
         </section>
         <section class="menuTrendingItems">
           <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the week</h6>
           <p>French Ragout</p>
           <hr />
           <p class="menuColorBlue menuTrendingPrice">4.70</p>
-          <img src="../imgs\photos\menu\trending-image-2.png" alt="ceai" class="menuTrendingImgs" />
+          <img src="imgs\photos\menu\trending-image-2.png" alt="ceai" class="menuTrendingImgs" />
         </section>
         <section class="menuTrendingItems">
           <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the month</h6>
           <p>Tuna Salad</p>
           <hr />
           <p class="menuColorBlue menuTrendingPrice">4.80</p>
-          <img src="../imgs\photos\menu\trending-image-3.png" alt="ceai" class="menuTrendingImgs" />
+          <img src="imgs\photos\menu\trending-image-3.png" alt="ceai" class="menuTrendingImgs" />
         </section>
         <section class="menuTrendingItems">
           <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the day</h6>
           <p>Flat White</p>
           <hr />
           <p class="menuColorBlue menuTrendingPrice">4.20</p>
-          <img src="../imgs\photos\menu\trending-image-4.png" alt="ceai" class="menuTrendingImgs" />
+          <img src="imgs\photos\menu\trending-image-4.png" alt="ceai" class="menuTrendingImgs" />
         </section>
         <section class="menuTrendingItems">
           <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the week</h6>
           <p>Macarons</p>
           <hr />
           <p class="menuColorBlue menuTrendingPrice">6.00</p>
-          <img src="../imgs\photos\menu\trending-image-5.png" alt="ceai" class="menuTrendingImgs" />
+          <img src="imgs\photos\menu\trending-image-5.png" alt="ceai" class="menuTrendingImgs" />
         </section>
         <section class="menuTrendingItems">
           <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the month</h6>
           <p>Espresso</p>
           <hr />
           <p class="menuColorBlue menuTrendingPrice">1.32</p>
-          <img src="../imgs/photos/menu/trending-image-6.png" alt="ceai" class="menuTrendingImgs" />
+          <img src="imgs/photos/menu/trending-image-6.png" alt="ceai" class="menuTrendingImgs" />
         </section>
       </article>
       <h2 class="menuTrendingTitile menuColorBlue">Le Menu</h2>
