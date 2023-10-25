@@ -35,7 +35,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   height: 60rem;
   object-fit: cover;
 }
@@ -43,14 +43,14 @@
 .header-child {
   position: absolute;
   top: 0;
-  width: 100%; 
+  width: 100%;
   height: 60rem;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .header-content {
-  width: 100%; 
-  height: 91%; 
+  width: 100%;
+  height: 91%;
 }
 
 .welcome {
@@ -76,14 +76,14 @@
 
 .no-bg-component {
   position: absolute;
-  top: 5%; 
-  left: 2.5%; 
-  width: 95%; 
-  height: 90%; 
+  top: 5%;
+  left: 2.5%;
+  width: 95%;
+  height: 90%;
 }
 
 .logo-02-4-parent {
-  position: relative; 
+  position: relative;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -128,8 +128,8 @@
 
 .le-menu-parent {
   position: sticky;
-  top: 7%; 
-  left: 0; 
+  top: 7%;
+  left: 0;
   z-index: 1;
   width: 100vw;
   height: 5.25rem;
@@ -180,13 +180,20 @@ img.headerLogo {
 
 .map-section {
   display: flex;
-  background: linear-gradient(180deg, #167CEB 0%, #BAD3EE 0.01%, #9AC0DA 13.02%, #00657C 76.04%, #003744 100%);
+  background: linear-gradient(
+    180deg,
+    #167ceb 0%,
+    #bad3ee 0.01%,
+    #9ac0da 13.02%,
+    #00657c 76.04%,
+    #003744 100%
+  );
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
 
 .copyrighttext {
   display: flex;
-  background: #012E38;
+  background: #012e38;
   align-items: center;
   justify-content: center;
   height: 5.125rem;
@@ -343,7 +350,7 @@ hr {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 4rem;  
+  margin-bottom: 4rem;
 }
 .menuCategoriesNames {
   text-decoration: none;
@@ -354,16 +361,16 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #07143B;
+  color: #07143b;
   box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.06);
   font-size: 0.9rem;
   letter-spacing: 0.02rem;
   font-weight: 500;
 }
-.menuCategoriesNames:hover,.menuCategoriesNames:focus{
+.menuCategoriesNames:hover,
+.menuCategoriesNames:focus {
   background-color: rgba(186, 211, 238, 0.56);
 }
-
 
 /*Menu Styling*/
 .menuContainer {
@@ -389,7 +396,7 @@ hr {
   align-items: center;
   margin-bottom: 3.5rem;
 }
-.menuTitle{
+.menuTitle {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
@@ -398,12 +405,13 @@ hr {
   padding-top: 2rem;
 }
 
-.menuProducts{
+.menuProducts {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   flex-shrink: 0;
-  color: #07143B;
+  color: #07143b;
+  border-bottom: 0.01rem dotted black;
 }
 .menuBtn {
   background-color: white;
@@ -424,34 +432,35 @@ hr {
 }
 
 .menuBackgroundImg {
-background: linear-gradient(to top, #f5eed2e3, #f5eed2de), url('../imgs/photos/menu/croissants.jpg') no-repeat top center;
-background-size: cover;
+  background: linear-gradient(to top, #f5eed2e3, #f5eed2de),
+    url("../imgs/photos/menu/croissants.jpg") no-repeat top center;
+  background-size: cover;
 }
 
-.menuBackgroundClr{
+.menuBackgroundClr {
   background-color: rgba(186, 211, 238, 0.56);
 }
 
-.menuColorBlue{
-  color: #00657C;
+.menuColorBlue {
+  color: #00657c;
 }
 
 .menuTrendingPrice {
   font-weight: 500;
 }
 
-.menuTrendingSubTitle{
+.menuTrendingSubTitle {
   font-weight: 450;
   font-size: 0.75rem;
 }
 
-.menuSubTitle{
-  color: #00657C99;
+.menuSubTitle {
+  color: #00657c99;
   font-size: 0.85rem;
   letter-spacing: 0.025rem;
 }
 
-.menuSubProducts{
+.menuSubProducts {
   font-size: 0.6rem;
   font-weight: 500;
   letter-spacing: 0.01rem;
