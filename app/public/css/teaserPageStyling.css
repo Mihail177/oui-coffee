@@ -40,7 +40,6 @@ body {
     bottom: 0;
     z-index: 1;
 }
-
 /* Teaser felxbox */
 .teaserFlex {
     position: absolute;
@@ -156,10 +155,10 @@ body {
     align-items: center;
     background-color: #00657C;
     column-gap: 4rem;
-    height: 8rem;
+    height: 8rem; /* change to padding */
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; /* change to vw */
     z-index: 2;
 }
 /* Footer content */

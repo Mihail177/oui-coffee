@@ -34,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    margin-top: 5%;
+    margin-top: 5%; /* change to rem */
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -42,7 +42,7 @@ body {
 }
 /* Promotion box content */
 .promoTxt {
-    font-size: 10vw;
+    font-size: 10vw; /* change to rem */
     font-weight: 450;
     white-space: nowrap;
     color: #FFF7E3;
@@ -99,34 +99,44 @@ body {
 .bgIcon2 {
     grid-column-start: 7;
     grid-row-start: 9;
-}.bgIcon3 {
+}
+.bgIcon3 {
     grid-column-start: 8;
     grid-row-start: 8;
-}.bgIcon4 {
+}
+.bgIcon4 {
     grid-column-start: 8;
     grid-row-start: 10;
-}.bgIcon5 {
+}
+.bgIcon5 {
     grid-column-start: 9;
     grid-row-start: 9;
-}.bgIcon6 {
+}
+.bgIcon6 {
     grid-column-start: 10;
     grid-row-start: 8;
-}.bgIcon7 {
+}
+.bgIcon7 {
     grid-column-start: 11;
     grid-row-start: 7;
-}.bgIcon8 {
+}
+.bgIcon8 {
     grid-column-start: 12;
     grid-row-start: 6;
-}.bgIcon9 {
+}
+.bgIcon9 {
     grid-column-start: 10;
     grid-row-start: 10;
-}.bgIcon10 {
+}
+.bgIcon10 {
     grid-column-start: 11;
     grid-row-start: 9;
-}.bgIcon11 {
+}
+.bgIcon11 {
     grid-column-start: 12;
     grid-row-start: 8;
-}.bgIcon12 {
+}
+.bgIcon12 {
     grid-column-start: 12;
     grid-row-start: 10;
 }
