@@ -179,25 +179,79 @@ img.headerLogo {
 }
 
 .mapSection {
+  gap: 2rem;
   display: flex;
-  background: linear-gradient(
-    180deg,
-    #167ceb 0%,
-    #bad3ee 0.01%,
-    #9ac0da 13.02%,
-    #00657c 76.04%,
-    #003744 100%
-  );
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  background: linear-gradient(180deg, #167CEB 0%, #BAD3EE 0.01%, #9AC0DA 13.02%, #00657C 76.04%, #003744 100%);
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
+}
+
+.map {
+  padding: 6.5rem 4rem 0 8rem;
+}
+
+.timesContact {
+  display: flex;
+  /* font-size: 1.15rem; */
+  flex-direction: column;
+  padding-top: 7.5rem;
+  gap: 2rem;
+  color: var(--Yellow, #EDE5BB);
+}
+
+.bodyText {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.daysAndTimes {
+  display: flex;
+  flex-direction: row;
+}
+
+.availableTimes {
+  padding-left: 5rem;
+}
+
+.contactUs h3 {
+  padding-bottom: 1rem;
 }
 
 .copyrightText {
   display: flex;
+  color: var(--Yellow, #EDE5BB);
   background: #012e38;
   align-items: center;
   justify-content: center;
   height: 5.125rem;
   width: auto;
+}
+
+.footerSection {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  height: 7.5rem;
+  align-items: center;
+  justify-content: center;  
+  flex-direction: row;
+  gap: 2rem;
+  color: var(--Yellow, #EDE5BB);
+}
+
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerParagraph {
+  width: 15rem;
+}
+
+.footerContact {
+  padding-top: 5rem;
 }
 
 /* WOTM SECTION STYLING */
