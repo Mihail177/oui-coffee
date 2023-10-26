@@ -15,121 +15,132 @@
   font-family: "Circular Std";
 }
 
-/* header section start*/
+/*header section*/
+.HeaderWidth0 {
+  width: 100%;
+}
 
-.header1 {
+.HeaderTop0{
+  top: 0;
+}
+
+.HeaderBottom0{
+  bottom: 0;
+}
+
+.HeaderRight0{
+  right: 0;
+}
+
+.HeaderLeft0{
+  left: 0;
+}
+
+.HeaderMain {
   position: relative;
   overflow: hidden;
-  width: 100%;
   height: 60rem;
   text-align: center;
   font-size: 18.75rem;
   color: wheat;
 }
-
-.header1 * {
+.HeaderMain * {
   font-family: "Caveat";
 }
 
-.pexels-chevanon-photography-33-icon {
+.HeaderBackground{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 60rem;
   object-fit: cover;
 }
 
-.header-child {
+.HeaderChild {
   position: absolute;
   top: 0;
-  width: 100%;
   height: 60rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
-.header-content {
-  width: 100%;
-  height: 91%;
+.HeaderContent {
+  height: 91%; 
 }
 
-.welcome {
+.HeaderWelcome {
   position: absolute;
   top: 15rem;
-  width: 100%;
   font-size: 18.75rem;
   font-weight: 400;
   text-shadow: 0 0 30px #eeeba7a7;
 }
 
-.bienvenue {
+.HeaderBienvenue {
   font-size: 4rem;
   line-height: 11rem;
   font-family: "Caveat";
   font-weight: 100;
   position: absolute;
-  top: 30rem;
+  top: 34rem;
   right: 23rem;
   width: 14.2rem;
   height: 3.75rem;
 }
 
-.no-bg-component {
+.HeaderCoffeCL{
+  font-size: 4rem;
+  line-height: 11rem;
+  font-family: "Caveat";
+  font-weight: 100;
+  position: absolute;
+  right: 23rem;
+  top: 30rem;
+}
+
+.HeaderNoBgComponent {
   position: absolute;
   top: 5%;
-  left: 2.5%;
-  width: 95%;
-  height: 90%;
+  left: 2.5%; 
+  width: 95%; 
+  height: 90%; 
 }
 
-.logo-02-4-parent {
-  position: relative;
+.HeaderCorners {
+  position: relative; 
   height: 100%;
-  width: 100%;
   object-fit: cover;
 }
-
-.logo-02-4-parent > * {
+.HeaderCorners * {
   position: absolute;
   filter: drop-shadow(0 0 10px yellow);
 }
 
-.logo-02-2-icon {
-  bottom: 0;
-  right: 0;
+.HeadeDecorCornerRB {
   rotate: 45deg;
 }
 
-.logo-02-4-icon {
-  bottom: 0;
-  left: 0;
+.HeadeDecorCornerLB {
   rotate: 135deg;
 }
 
-.logo-02-6-icon {
-  top: 0;
-  right: 0;
+.HeadeDecorCornerRT {
   rotate: -45deg;
 }
 
-.logo-02-8-icon {
-  top: 0;
-  left: 0;
+.HeadeDecorCornerLT {
   rotate: -135deg;
 }
 
-.le-menu-parent,
-.headerDropdown {
+.HeaderLeMenuParent,
+.HeaderDropdown {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 2.5rem;
 }
 
-.le-menu-parent {
+.HeaderLeMenuParent {
   position: sticky;
-  top: 7%;
-  left: 0;
+  top: 7%; 
+  left: 0; 
   z-index: 1;
   width: 100vw;
   height: 5.25rem;
@@ -138,7 +149,7 @@
   padding: 0 7%;
 }
 
-img.headerLogo {
+img.HeaderLogo {
   width: 10%;
 }
 
