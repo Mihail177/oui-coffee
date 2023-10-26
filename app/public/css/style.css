@@ -553,6 +553,81 @@ hr {
 
 @media (max-width: 1200px) {}
 
-@media (max-width: 800px) {}
+@media (max-width: 800px) {
 
-@media (max-width: 400px) {}
+  /*WOTM STYLING: Fixing sizes*/
+  .wotmH1 {
+    font-size: 4rem;
+  }
+
+  .wotmButton {
+    font-size: 1.3rem;
+    padding: 2vh 6vh;
+  }
+
+  .wotmFood {
+    font-size: 1.7rem;
+  }
+
+  .wotmWrapper {
+    padding: 9vh 7vw 12vh;
+  }
+
+  /*WOTM STYLING: Fixing the background*/
+  .wotm {
+    box-shadow: inset 0 2.75rem 2.75rem -2.75rem #69686890,
+      inset 0 -2.75rem 2.75rem -2.75rem #9e9e9e32;
+  }
+
+  .wotmBackground {
+    width: 150vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 430px) {
+
+  /*PROPOSING A CHANGE TO MAXWIDTH (400px => 430px)*/
+  body,
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /*WOTM STYLING: Fixing sizes*/
+  .wotmH1 {
+    font-size: 1.875rem;
+    margin: 0 0 2rem;
+  }
+
+  .wotmButton {
+    font-size: 1rem;
+    padding: 2vh 3vh;
+  }
+
+  .wotmFood {
+    font-size: 0.875rem;
+    width: 7rem;
+    height: 12rem;
+  }
+
+  .wotmFood>img {
+    max-width: 6.7rem;
+  }
+
+  .wotmWrapper {
+    padding: 7vh 12vw 9vh;
+  }
+
+  .wotmFood>p {
+    margin-bottom: 1rem;
+  }
+
+  /*WOTM STYLING: Fixing the background*/
+
+  .wotmBackground {
+    width: 200vw;
+    height: 50vh;
+    top: 10vh;
+  }
+}
