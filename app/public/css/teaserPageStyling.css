@@ -72,16 +72,14 @@ body {
     color: #00657C;
 }
 .homeBtn {
-    font-weight: 500;
+    font-weight: 450;
     font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
-    padding-top: 1.2rem;
     color: #FEFBF4;
     background-color: #00657C;
     border-radius: 6.25rem;
-    width: 14rem;
-    height: 4rem;
+    padding: 1.1rem 2rem;
 }
 /* Background illustrations grid */
 .bgGrid {
@@ -177,51 +175,55 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
-    padding-top: 1.2rem;
     color: #00657C;
     background-color: #FEFBF4;
     border-radius: 6.25rem;
-    width: 16rem;
-    height: 4rem;
+    padding: 1.1rem 2rem;
 }
 /* Reponsiveness tweaks */
-/* update responsiveness max-width 1200px, 800px, 400px */
 @media screen and (max-width: 1200px) {
-
-}
-@media screen and (max-width: 800px) {
-
-}
-@media screen and (max-width: 400px) {
-
-}
-@media screen and (max-width: 700px) {
-    /* Teaser image */
-    .teaserImg {
-        width: 25rem;
-        height: 25rem;
+    .teaserCntrImg {
+        width: 60vw;
     }
-    /* Teaser flexbox */
-    .teaserFlex {
-        margin-top: 25rem;
-        top: 0;
-    }
-    /* Teaser content */
-    .teaserTxt {
-        font-size: 2rem;
-        margin-bottom: -20px; /* get rid of px */
-    }
-    .teaserSubHdr {
-        font-size: 6rem;
-    }
-    /* Illustrations */
-    .bgGrid > img {
+    .bgIllu {
         opacity: 0.3;
     }
-    /* Footer */
-    .footerPromo {
-        flex-direction: column;
-        height: 12rem;
-        padding: 5px;
+}
+@media screen and (max-width: 800px) {
+    .teaserCntrImg {
+        width: 90vw;
+    }
+    .teaserFtrContainer {
+        padding: 2rem; 
+    }
+    .moreInfoBtn {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .teaserCntrImg {
+        width: 100vw;
+        margin-top: 0;
+    }
+    .teaserMainContainer {
+        margin-top: 20rem;
+    }
+    .teaserMainText {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .teaserMainMessage {
+        font-size: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .homeBtn {
+        margin-top: 1rem;
+    }
+    .teaserFtrText {
+        font-size: 1.5rem;
+    }
+    .moreInfoBtn {
+        font-size: 1rem;
     }
 }
