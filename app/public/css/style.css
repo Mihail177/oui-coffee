@@ -183,7 +183,7 @@ img.headerLogo {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  background: linear-gradient(180deg, #167CEB 0%, #BAD3EE 0.01%, #9AC0DA 13.02%, #00657C 76.04%, #003744 100%);
+  background: linear-gradient(180deg, rgba(186, 211, 238, 0.20) 0%, rgba(0, 101, 124, 0.94) 100%), url(../imgs/photos/aboutus/pictureofmap.png), lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
 
