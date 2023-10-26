@@ -198,7 +198,13 @@ img.HeaderLogo {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  background: linear-gradient(180deg, rgba(186, 211, 238, 0.20) 0%, rgba(0, 101, 124, 0.94) 100%), url(../imgs/photos/aboutus/pictureofmap.png), lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
+  background: linear-gradient(
+      180deg,
+      rgba(186, 211, 238, 0.2) 0%,
+      rgba(0, 101, 124, 0.94) 100%
+    ),
+    url(../imgs/photos/aboutus/pictureofmap.png),
+    lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
 
@@ -212,7 +218,7 @@ img.HeaderLogo {
   flex-direction: column;
   padding-top: 7.5rem;
   gap: 2rem;
-  color: var(--Yellow, #EDE5BB);
+  color: var(--Yellow, #ede5bb);
 }
 
 .bodyText {
@@ -236,7 +242,7 @@ img.HeaderLogo {
 
 .copyrightText {
   display: flex;
-  color: var(--Yellow, #EDE5BB);
+  color: var(--Yellow, #ede5bb);
   background: #012e38;
   align-items: center;
   justify-content: center;
@@ -253,7 +259,7 @@ img.HeaderLogo {
   justify-content: center;
   flex-direction: row;
   gap: 2rem;
-  color: var(--Yellow, #EDE5BB);
+  color: var(--Yellow, #ede5bb);
 }
 
 .quickLinks {
@@ -296,7 +302,6 @@ img.HeaderLogo {
   font-weight: 400;
   text-decoration: none;
   padding: 2.5vh 7vh;
-
 }
 
 /* WOTM food items */
@@ -320,7 +325,7 @@ img.HeaderLogo {
   color: #00657c;
 }
 
-.wotmFood>img {
+.wotmFood > img {
   max-width: 8rem;
   filter: drop-shadow(0.625rem 1.875rem 1.875rem #69686873);
 }
@@ -331,7 +336,7 @@ img.wotmCoffee {
   filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
 }
 
-.wotmFood>p {
+.wotmFood > p {
   margin-bottom: 2.5rem;
 }
 
@@ -355,7 +360,7 @@ img.wotmCoffee {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.wotmBackground>img {
+.wotmBackground > img {
   opacity: 0.13;
   max-width: 10rem;
 }
@@ -370,17 +375,18 @@ img.wotmCoffee {
   margin-bottom: 2rem;
   font-weight: 400;
 }
-
+.menuTrendingTitile:first-child {
+  margin-top: 6rem;
+}
 .menuTrendingOrders {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 5rem;
+  column-gap: 4rem;
   row-gap: 2rem;
   justify-content: center;
   width: 60vw;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
-
 .menuView {
   display: flex;
   justify-content: center;
@@ -389,11 +395,9 @@ img.wotmCoffee {
   background: linear-gradient(180deg, #f8f3de 0%, #e2ebf6 49.48%, #bad3ee 100%);
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.52);
 }
-
 hr {
   width: 1.5rem;
 }
-
 .menuTrendingItems {
   background-color: white;
   padding: 1.5rem;
@@ -405,13 +409,12 @@ hr {
   position: relative;
   backdrop-filter: blur(1.5rem);
 }
-
 .menuTrendingImgs {
   position: absolute;
   width: 7rem;
   height: 7rem;
   top: 5%;
-  right: -20%;
+  right: -18%;
 }
 
 /*Le Menu*/
@@ -419,11 +422,12 @@ hr {
 /*Categories*/
 .menuCategories {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin: 0 2rem 4rem 2rem;
 }
-
 .menuCategoriesNames {
   text-decoration: none;
   width: 8rem;
@@ -439,7 +443,6 @@ hr {
   letter-spacing: 0.02rem;
   font-weight: 500;
 }
-
 .menuCategoriesNames:hover,
 .menuCategoriesNames:focus {
   background-color: rgba(186, 211, 238, 0.56);
@@ -450,21 +453,19 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
+  margin: 0 2.5rem;
 }
-
 .menuItems {
   background-color: white;
   border-radius: 1.5rem;
-  padding: 1.5rem;
+  padding: 2.5rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .menuItems:nth-child(8) {
   margin-bottom: 6rem;
 }
-
 .menuSubitems {
   display: flex;
   flex-direction: column;
@@ -472,14 +473,12 @@ hr {
   align-items: center;
   margin-bottom: 3.5rem;
 }
-
 .menuTitle {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
   font-family: "Caveat";
   margin-bottom: 1.5rem;
-  padding-top: 2rem;
 }
 
 .menuProducts {
@@ -489,10 +488,7 @@ hr {
   flex-shrink: 0;
   color: #07143b;
   border-bottom: 0.01rem dotted black;
-  color: #07143B;
-  border-bottom: 0.1rem dotted black;
 }
-
 .menuBtn {
   background-color: white;
   border-radius: 1.5rem;
@@ -501,15 +497,12 @@ hr {
   color: black;
   text-align: center;
 }
-
 .menuSpanColumn2 {
   grid-column: span 2;
 }
-
 .menuSpanColumnFull {
   grid-column: span 3;
 }
-
 .menuSpanRow2 {
   grid-row: span 2;
 }
@@ -551,10 +544,14 @@ hr {
   margin-left: 1.25rem;
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+  .menuTrendingOrders {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+  }
+}
 
 @media (max-width: 800px) {
-
   body,
   html {
     width: 100vw;
@@ -592,7 +589,6 @@ hr {
 }
 
 @media (max-width: 430px) {
-
   /*PROPOSING A CHANGE TO MAXWIDTH (400px => 430px)*/
 
   /*WOTM STYLING: Fixing sizes*/
@@ -612,7 +608,7 @@ hr {
     height: 12rem;
   }
 
-  .wotmFood>img {
+  .wotmFood > img {
     max-width: 6.7rem;
   }
 
@@ -620,7 +616,7 @@ hr {
     padding: 7vh 12vw 9vh;
   }
 
-  .wotmFood>p {
+  .wotmFood > p {
     margin-bottom: 1rem;
   }
 
