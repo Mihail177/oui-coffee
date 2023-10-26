@@ -586,6 +586,21 @@ hr {
     width: 150vw;
     height: 80vh;
   }
+
+  /*Menu Section Styling Responsivness*/
+  .menuTrendingOrders {
+    grid-template-columns: 1fr;
+  }
+  .menuTrendingImgs {
+    right: -10%;
+  }
+  .menuSpanRow2 {
+    grid-row: 1;
+  }
+  .menuItems,
+  .menuSubitems {
+    grid-column: 1 / span 3;
+  }
 }
 
 @media (max-width: 430px) {
