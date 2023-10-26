@@ -3,10 +3,12 @@
   font-family: CircularStd;
   src: url(../fonts/CircularStd-Book.otf);
 }
+
 @font-face {
   font-family: Caveat;
   src: url(../fonts/Caveat-Regular.ttf);
 }
+
 /* Removes the basic margin and padding that is automatically assigned to every site*/
 * {
   margin: 0;
@@ -20,19 +22,19 @@
   width: 100%;
 }
 
-.HeaderTop0{
+.HeaderTop0 {
   top: 0;
 }
 
-.HeaderBottom0{
+.HeaderBottom0 {
   bottom: 0;
 }
 
-.HeaderRight0{
+.HeaderRight0 {
   right: 0;
 }
 
-.HeaderLeft0{
+.HeaderLeft0 {
   left: 0;
 }
 
@@ -44,11 +46,12 @@
   font-size: 18.75rem;
   color: wheat;
 }
+
 .HeaderMain * {
   font-family: "Caveat";
 }
 
-.HeaderBackground{
+.HeaderBackground {
   position: absolute;
   height: 60rem;
   object-fit: cover;
@@ -58,11 +61,11 @@
   position: absolute;
   top: 0;
   height: 60rem;
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .HeaderContent {
-  height: 91%; 
+  height: 91%;
 }
 
 .HeaderWelcome {
@@ -85,7 +88,7 @@
   height: 3.75rem;
 }
 
-.HeaderCoffeCL{
+.HeaderCoffeCL {
   font-size: 4rem;
   line-height: 11rem;
   font-family: "Caveat";
@@ -98,16 +101,17 @@
 .HeaderNoBgComponent {
   position: absolute;
   top: 5%;
-  left: 2.5%; 
-  width: 95%; 
-  height: 90%; 
+  left: 2.5%;
+  width: 95%;
+  height: 90%;
 }
 
 .HeaderCorners {
-  position: relative; 
+  position: relative;
   height: 100%;
   object-fit: cover;
 }
+
 .HeaderCorners * {
   position: absolute;
   filter: drop-shadow(0 0 10px yellow);
@@ -139,8 +143,8 @@
 
 .HeaderLeMenuParent {
   position: sticky;
-  top: 7%; 
-  left: 0; 
+  top: 7%;
+  left: 0;
   z-index: 1;
   width: 100vw;
   height: 5.25rem;
@@ -246,7 +250,7 @@ img.HeaderLogo {
   margin-bottom: 1.5rem;
   height: 7.5rem;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   flex-direction: row;
   gap: 2rem;
   color: var(--Yellow, #EDE5BB);
@@ -269,30 +273,30 @@ img.HeaderLogo {
 .wotmWrapper {
   position: relative;
   overflow: hidden;
-  padding: 10% 7%;
+  padding: 15vh 7vw;
+  text-align: center;
 }
 
 .wotmH1 {
   font-family: "Caveat";
   font-weight: 400;
   color: #00657c;
-  text-align: center;
   letter-spacing: 0.1rem;
   margin: 0 0 4.6rem;
   font-size: 4.4rem;
 }
 
-.blueButton {
-  width: 14.3rem;
-  height: 4.6rem;
+.wotmButton {
   background-color: #00657c;
   color: #fefbf4;
   margin: auto;
   border-radius: 6.3rem;
   text-align: center;
   font-size: 1.6rem;
-  font-weight: 500;
-  padding-top: 1.5%;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 2.5vh 7vh;
+
 }
 
 /* WOTM food items */
@@ -301,8 +305,7 @@ img.HeaderLogo {
   z-index: 1;
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
-  gap: 2%;
+  gap: 1.5vw;
   padding-bottom: 2.5rem;
   justify-content: space-evenly;
   margin: auto;
@@ -317,46 +320,44 @@ img.HeaderLogo {
   color: #00657c;
 }
 
-.wotmFood > img {
-  max-width: 10rem;
+.wotmFood>img {
+  max-width: 8rem;
   filter: drop-shadow(0.625rem 1.875rem 1.875rem #69686873);
 }
 
 img.wotmCoffee {
-  max-width: 12rem;
+  max-width: 10rem;
   rotate: 90deg;
   filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
 }
 
-.wotmFood > p {
-  width: 100%;
+.wotmFood>p {
   margin-bottom: 2.5rem;
 }
 
 /* WOTM background */
 .wotm {
   background-color: #fefbf4;
-  width: 100%;
   box-shadow: inset 0 3.75rem 3.75rem -3.75rem #696868,
-    inset 0 -3.75rem 3.75rem -3.75rem #696868;
+    inset 0 -3.75rem 3.75rem -3.75rem #9e9e9e61;
 }
 
 .wotmBackground {
   transform: rotate(-42.512deg);
   z-index: 0;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 30%;
-  left: 35%;
+  width: 100vw;
+  height: 100vh;
+  top: 30vh;
+  left: 35vw;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
 
-.wotmBackground > img {
+.wotmBackground>img {
   opacity: 0.13;
-  max-width: 12rem;
+  max-width: 10rem;
 }
 
 /*Menu Section styling*/
@@ -369,6 +370,7 @@ img.wotmCoffee {
   margin-bottom: 2rem;
   font-weight: 400;
 }
+
 .menuTrendingOrders {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -378,6 +380,7 @@ img.wotmCoffee {
   width: 60vw;
   margin-bottom: 7rem;
 }
+
 .menuView {
   display: flex;
   justify-content: center;
@@ -386,9 +389,11 @@ img.wotmCoffee {
   background: linear-gradient(180deg, #f8f3de 0%, #e2ebf6 49.48%, #bad3ee 100%);
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.52);
 }
+
 hr {
   width: 1.5rem;
 }
+
 .menuTrendingItems {
   background-color: white;
   padding: 1.5rem;
@@ -400,6 +405,7 @@ hr {
   position: relative;
   backdrop-filter: blur(1.5rem);
 }
+
 .menuTrendingImgs {
   position: absolute;
   width: 7rem;
@@ -417,6 +423,7 @@ hr {
   flex-wrap: wrap;
   margin-bottom: 4rem;
 }
+
 .menuCategoriesNames {
   text-decoration: none;
   width: 8rem;
@@ -432,6 +439,7 @@ hr {
   letter-spacing: 0.02rem;
   font-weight: 500;
 }
+
 .menuCategoriesNames:hover,
 .menuCategoriesNames:focus {
   background-color: rgba(186, 211, 238, 0.56);
@@ -443,6 +451,7 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
+
 .menuItems {
   background-color: white;
   border-radius: 1.5rem;
@@ -451,9 +460,11 @@ hr {
   flex-direction: column;
   justify-content: center;
 }
+
 .menuItems:nth-child(8) {
   margin-bottom: 6rem;
 }
+
 .menuSubitems {
   display: flex;
   flex-direction: column;
@@ -461,6 +472,7 @@ hr {
   align-items: center;
   margin-bottom: 3.5rem;
 }
+
 .menuTitle {
   text-align: center;
   font-size: 3rem;
@@ -477,7 +489,10 @@ hr {
   flex-shrink: 0;
   color: #07143b;
   border-bottom: 0.01rem dotted black;
+  color: #07143B;
+  border-bottom: 0.1rem dotted black;
 }
+
 .menuBtn {
   background-color: white;
   border-radius: 1.5rem;
@@ -486,12 +501,15 @@ hr {
   color: black;
   text-align: center;
 }
+
 .menuSpanColumn2 {
   grid-column: span 2;
 }
+
 .menuSpanColumnFull {
   grid-column: span 3;
 }
+
 .menuSpanRow2 {
   grid-row: span 2;
 }
@@ -533,9 +551,8 @@ hr {
   margin-left: 1.25rem;
 }
 
-@media (max-width: 1200px) {
-}
-@media (max-width: 800px) {
-}
-@media (max-width: 400px) {
-}
+@media (max-width: 1200px) {}
+
+@media (max-width: 800px) {}
+
+@media (max-width: 400px) {}

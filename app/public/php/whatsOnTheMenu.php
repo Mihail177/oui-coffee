@@ -29,7 +29,7 @@
                             <img src='imgs/photos/whatsOnTheMenu/lemonade.png' alt='lemonade'>
                         </div>
                 </section>
-                <p class='blueButton'>Le Menu</p>
+                <a href='' class='wotmButton'>Le Menu</a>
                 <div class='wotmBackground'>";
                 for ($i=0; $i<=3; $i++) {
                     echo '<img src="imgs/illustrations/merengue/illustrations_blue green_merengue.svg" alt="merengue">';
