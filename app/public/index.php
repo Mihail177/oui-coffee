@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header><?php include 'php/header.php'; header();?></header>
+    <header><?php include 'php/header.php'; headerSection();?></header>
     <section><?php include 'php/whatsOnTheMenu.php';?></section>
     <article><?php include 'php/menu.php'; MenuSection();?></article>
     <section><?php include 'php/aboutUs.php'; aboutUs();?></section>
