@@ -545,6 +545,7 @@ hr {
 }
 
 @media (max-width: 1200px) {
+  /*Menu Section Styling Responsivness*/
   .menuTrendingOrders {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
@@ -595,11 +596,14 @@ hr {
     right: -10%;
   }
   .menuSpanRow2 {
-    grid-row: 1;
+    grid-row: 5;
   }
   .menuItems,
   .menuSubitems {
     grid-column: 1 / span 3;
+  }
+  .menuSubitems {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -641,5 +645,29 @@ hr {
     width: 200vw;
     height: 50vh;
     top: 10vh;
+  }
+
+  /*Menu Section Styling Responsivness*/
+
+  .menuTrendingTitile {
+    font-size: 3rem;
+  }
+  .menuTrendingOrders {
+    width: 70vw;
+  }
+  .menuProducts {
+    font-size: 0.75rem;
+  }
+  .menuItems {
+    padding: 2.5rem;
+  }
+  .menuTitle {
+    font-size: 1.5rem;
+  }
+  .menuSubTitle {
+    font-size: 0.625rem;
+  }
+  .menuBtn {
+    font-size: 0.75rem;
   }
 }
