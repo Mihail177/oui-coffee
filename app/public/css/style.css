@@ -550,6 +550,9 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
   }
+  .menuSubTitle {
+    font-size: 0.65rem;
+  }
 }
 
 @media (max-width: 800px) {
