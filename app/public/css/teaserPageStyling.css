@@ -18,6 +18,8 @@
 /* Background colour */
 body {
     background-image: linear-gradient(#EEEAD6, #BAD3EE);
+    height: 100vh;
+    overflow: hidden;
 }
 /* Header container for logo */
 .teaserHdrContainer {
@@ -205,30 +207,43 @@ body {
         font-size: 1.2rem;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) { 
     .teaserCntrImg {
         width: 100vw;
-        margin-top: 0;
+        margin-top: 5rem;
     }
     .teaserMainContainer {
-        margin-top: 20rem;
+        margin-top: 25rem;
+        row-gap: 1rem;
     }
     .teaserMainText {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        font-size:  1rem;
     }
     .teaserMainMessage {
-        font-size: 6rem;
         padding-left: 1rem;
         padding-right: 1rem;
+        font-size: 5rem;
+        line-height: 0.7;
+        overflow: visible;
     }
     .homeBtn {
         margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .teaserFtrContainer {
+        position: sticky;
+        bottom: 0;
+        flex-direction: column;
+        padding: 1rem;
+        row-gap: 1rem;
     }
     .teaserFtrText {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .moreInfoBtn {
-        font-size: 1rem;
+        padding: 0.5rem 2rem;
+        font-size: 0.9rem;
     }
 }
