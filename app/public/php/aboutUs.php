@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
-    <title>Document</title>
-</head>
-<body>
+<?php
+function aboutUs(){
+
+echo '
     <div class="aboutusSection">
         <div class="aboutusContent">
             <p id="aboutusTitle">About us</p>
@@ -46,7 +40,7 @@
         </div>
     </div>
     <div class="footerSection">
-        <div class="imageLogo"><img src="../imgs/logos/logo-02.png" alt=""></div>
+        <div class="imageLogo"><img src="imgs/logos/logo-02.png" alt=""></div>
 
         <div class="quickLinks">
             <h3> Quick Links </h3>
@@ -69,5 +63,6 @@
     </div>
 </div>
     <div class="copyrightText">&copy; Copyright 2023 - OUI</div>
-</body>
-</html>
+    ';
+}
+?>

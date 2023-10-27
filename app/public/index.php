@@ -7,14 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header></header>
-    <section>
-      <?php include 'php/whatsOnTheMenu.php';?>
-    </section>
-    <article><?php include 'php/menu.php'; MenuSection();?>
-  
-  </article>
-    <section></section>
-    <footer></footer>
+    <header><?php include 'php/header.php'; header();?></header>
+    <section><?php include 'php/whatsOnTheMenu.php';?></section>
+    <article><?php include 'php/menu.php'; MenuSection();?></article>
+    <section><?php include 'php/aboutUs.php'; aboutUs();?></section>
   </body>
 </html>
