@@ -715,3 +715,21 @@ hr {
     font-size: 0.75rem;
   }
 }
+
+/*Lemon and Beans for the menu page*/
+.menuImgLemon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+ }
+ .menuImgBeans {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+ }
