@@ -225,13 +225,7 @@ img.HeaderLogo {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  background: linear-gradient(
-      180deg,
-      rgba(186, 211, 238, 0.2) 0%,
-      rgba(0, 101, 124, 0.94) 100%
-    ),
-    url(../imgs/photos/aboutus/pictureofmap.png),
-    lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
+  background: linear-gradient(180deg,rgba(186, 211, 238, 0.75) 0%, rgba(0, 101, 124, 0.94) 100%),url(../imgs/photos/aboutus/pictureofmap.png), lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
 
@@ -267,40 +261,60 @@ img.HeaderLogo {
   padding-bottom: 1rem;
 }
 
+.contactButtons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+}
 .copyrightText {
   display: flex;
-  color: var(--Yellow, #ede5bb);
+  color: #ede5bb;
   background: #012e38;
   align-items: center;
   justify-content: center;
-  height: 5.125rem;
+  height: 3rem;
   width: auto;
 }
 
 .footerSection {
+  padding-left: 20rem;
   display: flex;
   margin-top: 5rem;
   margin-bottom: 1.5rem;
   height: 7.5rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 2rem;
-  color: var(--Yellow, #ede5bb);
+  gap: 5rem;
+  color:#ede5bb;
+}
+
+.footerSection > img {
+    width: 25rem;
+    height: 15rem;
+}
+
+.imageLogo {
+  height: 10px;
+  width: 10px;
 }
 
 .quickLinks {
   display: flex;
   flex-direction: column;
+  color: #ede5bb;
+}
+
+.quickLinks a {
+  text-decoration: none;
+  color: #ede5bb;
 }
 
 .footerParagraph {
   width: 15rem;
 }
 
-.footerContact {
-  padding-top: 5rem;
-}
 
 /* WOTM SECTION STYLING */
 .wotmWrapper {

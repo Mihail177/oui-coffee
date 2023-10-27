@@ -1,7 +1,4 @@
-<?php
-function aboutUs(){
-
-echo '
+    <link rel="stylesheet" href="../css/style.css">
     <div class="aboutusSection">
         <div class="aboutusContent">
             <p id="aboutusTitle">About us</p>
@@ -36,33 +33,29 @@ echo '
                 <h3>Contact us: </h3>
                 <p>Email: administrator@oui.com</p>
                 <p>Phone: 99990099</p>
+                <div class="contactButtons">
+                    <a href="www.facebook.com"><img src="../imgs/logos/facebook.png" alt=""></a>
+                    <a href="www.instagram.com"><img src="../imgs/logos/instagram.png" alt=""></a>
+                </div>
             </div>
         </div>
     </div>
     <div class="footerSection">
-        <div class="imageLogo"><img src="imgs/logos/logo-02.png" alt=""></div>
+        <img src="../imgs/logos/logo-02.png" alt="">
 
         <div class="quickLinks">
             <h3> Quick Links </h3>
             <p> </p>
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Menu</p>
-            <p>Events</p>
-            <p>Location</p>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#aboutus">About Us</a></p>
+            <p><a href="#menu">Menu</a></p>
+            <p><a href="#events">Events</a></p>
+            <p><a href="#location">Location</a></p>
         </div>
 
         <div class="footerParagraph">
             <p>We are a group of people who are very passionate about coffee and France. We love coffee, tea, biscuits, meringues, macarons, and many other pastries. We want to share our love for coffee with the world.</p></div>
         </div>
-
-        <div class="footerContact">
-            <p>Email: administrator@oui.com</p>
-            <p>Phone: 99990099</p>
-        </div>
     </div>
 </div>
     <div class="copyrightText">&copy; Copyright 2023 - OUI</div>
-    ';
-}
-?>
