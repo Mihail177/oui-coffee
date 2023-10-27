@@ -22,6 +22,32 @@
   width: 100%;
 }
 
+.HeaderBody {
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: changeBackground 10s linear infinite; /* 15s duration, 5s for each image */
+}
+
+@keyframes changeBackground {
+  0%, 100% {
+    background-image: url('../imgs/photos/1.jpg'); /* Start and end with the same image */
+  }
+  33.33% {
+    background-image: url('../imgs/photos/2.jpg'); /* Change at 33.33% of the animation duration */
+  }
+  66.66% {
+    background-image: url('../imgs/photos/3.jpg'); /* Change at 66.66% of the animation duration */
+  }
+}
+
+.HeaderCentring{
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+}
+
 .HeaderTop0 {
   top: 0;
 }
@@ -52,24 +78,27 @@
 }
 
 .HeaderBackground {
-  position: absolute;
+  /*position: absolute;*/
   height: 60rem;
   object-fit: cover;
 }
 
 .HeaderChild {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   height: 60rem;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .HeaderContent {
-  height: 91%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 73%;
+  /*position: absolute;*/
 }
 
 .HeaderWelcome {
-  position: absolute;
   top: 15rem;
   font-size: 18.75rem;
   font-weight: 400;
@@ -81,7 +110,6 @@
   line-height: 11rem;
   font-family: "Caveat";
   font-weight: 100;
-  position: absolute;
   top: 34rem;
   right: 23rem;
   width: 14.2rem;
@@ -93,13 +121,12 @@
   line-height: 11rem;
   font-family: "Caveat";
   font-weight: 100;
-  position: absolute;
-  right: 23rem;
-  top: 30rem;
+  justify-content: center;
+  display: flex;
 }
 
 .HeaderNoBgComponent {
-  position: absolute;
+  /*position: absolute;*/
   top: 5%;
   left: 2.5%;
   width: 95%;
