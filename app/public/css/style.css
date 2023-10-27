@@ -203,7 +203,7 @@ img.HeaderLogo {
   gap: 0.3rem;
 }
 
-/* only the title which is in the about us content */
+/* only the title which is in the about us content... */
 #aboutusTitle {
   color: rgba(237, 229, 187, 1);
   text-align: center;
