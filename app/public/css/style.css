@@ -18,170 +18,101 @@
 }
 
 /*header section*/
-.HeaderWidth0 {
-  width: 100%;
-}
 
-.HeaderBody {
+@keyframes changeBackground {
+  0%,
+  100% {
+    background-image: url("../imgs/photos/1.jpg"); /* Start and end with the same image */
+  }
+  33.33% {
+    background-image: url("../imgs/photos/2.jpg"); /* Change at 33.33% of the animation duration */
+  }
+  66.66% {
+    background-image: url("../imgs/photos/3.jpg"); /* Change at 66.66% of the animation duration */
+  }
+}
+/*Header Styling*/
+.headerMain {
+  width: 100%;
+  height: 100vh;
+  background-image: url("imgs/photos/pexels-chevanon-photography-302894.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   animation: changeBackground 10s linear infinite; /* 15s duration, 5s for each image */
-}
-
-@keyframes changeBackground {
-  0%, 100% {
-    background-image: url('../imgs/photos/1.jpg'); /* Start and end with the same image */
-  }
-  33.33% {
-    background-image: url('../imgs/photos/2.jpg'); /* Change at 33.33% of the animation duration */
-  }
-  66.66% {
-    background-image: url('../imgs/photos/3.jpg'); /* Change at 66.66% of the animation duration */
-  }
-}
-
-.HeaderCentring{
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
-}
-
-.HeaderTop0 {
-  top: 0;
-}
-
-.HeaderBottom0 {
-  bottom: 0;
-}
-
-.HeaderRight0 {
-  right: 0;
-}
-
-.HeaderLeft0 {
-  left: 0;
-}
-
-.HeaderMain {
+  background-color: whitesmoke;
   position: relative;
   overflow: hidden;
-  height: 60rem;
-  text-align: center;
-  font-size: 18.75rem;
-  color: wheat;
 }
-
-.HeaderMain * {
+/*Styling of the logo*/
+.headerLogo {
+  width: 5rem;
+  height: 5rem;
+}
+/*Styling navigation bar and the buttons of it*/
+.headerNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+.headerBtn {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: flex-end;
+}
+.headerBtns {
+  text-decoration: none;
   font-family: "Caveat";
+  font-size: 2rem;
+  color: #ede5bb;
 }
-
-.HeaderBackground {
-  /*position: absolute;*/
-  height: 60rem;
-  object-fit: cover;
+/*Styling Corners*/
+.headerCorner {
+  position: absolute;
+  filter: drop-shadow(0 0 2px #ede5bb);
 }
-
-.HeaderChild {
-  /*position: absolute;*/
+.headerCornerTL {
+  rotate: -135deg;
   top: 0;
-  height: 60rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
 }
-
-.HeaderContent {
+.headerCornerTR {
+  rotate: -45deg;
+  top: 0;
+  right: 0;
+}
+.headerCornerBL {
+  rotate: 45deg;
+  bottom: 0;
+  right: 0;
+}
+.headerCornerBR {
+  rotate: 135deg;
+  bottom: 0;
+  left: 0;
+}
+/*Styling the text for the header*/
+.headerText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 73%;
-  /*position: absolute;*/
+  align-items: center;
+  color: #ede5bb;
+  margin-top: 3rem;
+  line-height: 0.9;
 }
-
-.HeaderWelcome {
-  top: 15rem;
+.headerTitle {
+  font-family: "Caveat";
   font-size: 18.75rem;
   font-weight: 400;
-  text-shadow: 0 0 30px #eeeba7a7;
 }
-
-.HeaderBienvenue {
-  font-size: 4rem;
-  line-height: 11rem;
+.headerSubtitle {
   font-family: "Caveat";
-  font-weight: 100;
-  top: 34rem;
-  right: 23rem;
-  width: 14.2rem;
-  height: 3.75rem;
-}
-
-.HeaderCoffeCL {
   font-size: 4rem;
-  line-height: 11rem;
+}
+.headerSubtitle span {
   font-family: "Caveat";
-  font-weight: 100;
-  justify-content: center;
-  display: flex;
-}
-
-.HeaderNoBgComponent {
-  /*position: absolute;*/
-  top: 5%;
-  left: 2.5%;
-  width: 95%;
-  height: 90%;
-}
-
-.HeaderCorners {
-  position: relative;
-  height: 100%;
-  object-fit: cover;
-}
-
-.HeaderCorners * {
-  position: absolute;
-  filter: drop-shadow(0 0 10px yellow);
-}
-
-.HeadeDecorCornerRB {
-  rotate: 45deg;
-}
-
-.HeadeDecorCornerLB {
-  rotate: 135deg;
-}
-
-.HeadeDecorCornerRT {
-  rotate: -45deg;
-}
-
-.HeadeDecorCornerLT {
-  rotate: -135deg;
-}
-
-.HeaderLeMenuParent,
-.HeaderDropdown {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.HeaderLeMenuParent {
-  position: sticky;
-  top: 7%;
-  left: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 5.25rem;
-  justify-content: space-between;
-  font-size: 3.13rem;
-  padding: 0 7%;
-}
-
-img.HeaderLogo {
-  width: 10%;
+  color: #00657c;
+  font-weight: 700;
 }
 
 /* header section end */
@@ -225,7 +156,13 @@ img.HeaderLogo {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  background: linear-gradient(180deg,rgba(186, 211, 238, 0.75) 0%, rgba(0, 101, 124, 0.94) 100%),url(../imgs/photos/aboutus/pictureofmap.png), lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
+  background: linear-gradient(
+      180deg,
+      rgba(186, 211, 238, 0.75) 0%,
+      rgba(0, 101, 124, 0.94) 100%
+    ),
+    url(../imgs/photos/aboutus/pictureofmap.png),
+    lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
 }
 
@@ -287,12 +224,12 @@ img.HeaderLogo {
   justify-content: space-between;
   flex-direction: row;
   gap: 5rem;
-  color:#ede5bb;
+  color: #ede5bb;
 }
 
 .footerSection > img {
-    width: 25rem;
-    height: 15rem;
+  width: 25rem;
+  height: 15rem;
 }
 
 .imageLogo {
@@ -314,7 +251,6 @@ img.HeaderLogo {
 .footerParagraph {
   width: 15rem;
 }
-
 
 /* WOTM SECTION STYLING */
 .wotmWrapper {
@@ -724,12 +660,12 @@ hr {
   width: 100%;
   height: auto;
   max-width: 200px;
- }
- .menuImgBeans {
+}
+.menuImgBeans {
   position: absolute;
   right: 0;
   left: 0;
   width: 100%;
   height: auto;
   max-width: 150px;
- }
+}
