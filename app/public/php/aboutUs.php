@@ -1,4 +1,6 @@
-    <link rel="stylesheet" href="../css/style.css">
+<?php
+ function aboutUs(){
+    echo'
     <div class="aboutusSection">
         <div class="aboutusContent">
             <p id="aboutusTitle">About us</p>
@@ -34,23 +36,22 @@
                 <p>Email: administrator@oui.com</p>
                 <p>Phone: 99990099</p>
                 <div class="contactButtons">
-                    <a href="www.facebook.com"><img src="../imgs/logos/facebook.png" alt=""></a>
-                    <a href="www.instagram.com"><img src="../imgs/logos/instagram.png" alt=""></a>
+                    <a href="www.facebook.com"><img src="imgs/logos/facebook.png" alt=""></a>
+                    <a href="www.instagram.com"><img src="imgs/logos/instagram.png" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="footerSection">
-        <img src="../imgs/logos/logo-02.png" alt="">
+        <img src="imgs/logos/logo-02.png" alt="">
 
         <div class="quickLinks">
             <h3> Quick Links </h3>
-            <p> </p>
-            <p><a href="#home">Home</a></p>
-            <p><a href="#aboutus">About Us</a></p>
-            <p><a href="#menu">Menu</a></p>
-            <p><a href="#events">Events</a></p>
-            <p><a href="#location">Location</a></p>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Menu</a>
+            <a href="#">Events</a>
+            <a href="#">Location</a>
         </div>
 
         <div class="footerParagraph">
@@ -59,3 +60,6 @@
     </div>
 </div>
     <div class="copyrightText">&copy; Copyright 2023 - OUI</div>
+    ';
+};
+    ?>
