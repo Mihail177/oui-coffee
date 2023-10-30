@@ -12,7 +12,7 @@ echo '
 </head>
 </html>
 <article class="menuView">
-  <img class="menuImgLemon" src="..\imgs\photos\menu\limon-1.png" alt="Limon">
+  <img class="menuImgLemon" src="imgs\photos\menu\limon-1.png" alt="Limon">
   <h2 class="menuTrendingTitile menuColorBlue">Trending orders</h2>
   <article class="menuTrendingOrders">
     <section class="menuTrendingItems">
@@ -20,42 +20,42 @@ echo '
       <p>Rooibos Tea</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">3.00</p>
-      <img src="..\imgs\photos\menu\trending-image-1.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs\photos\menu\trending-image-1.png" alt=" " class="menuTrendingImgs" />
     </section>
     <section class="menuTrendingItems">
       <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the week</h6>
       <p>French Ragout</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">4.70</p>
-      <img src="..\imgs\photos\menu\trending-image-2.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs\photos\menu\trending-image-2.png" alt=" " class="menuTrendingImgs" />
     </section>
     <section class="menuTrendingItems">
       <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the month</h6>
       <p>Tuna Salad</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">4.80</p>
-      <img src="..\imgs\photos\menu\trending-image-3.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs\photos\menu\trending-image-3.png" alt=" " class="menuTrendingImgs" />
     </section>
     <section class="menuTrendingItems">
       <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the day</h6>
       <p>Flat White</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">4.20</p>
-      <img src="..\imgs\photos\menu\trending-image-4.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs\photos\menu\trending-image-4.png" alt=" " class="menuTrendingImgs" />
     </section>
     <section class="menuTrendingItems">
       <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the week</h6>
       <p>Macarons</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">6.00</p>
-      <img src="..\imgs\photos\menu\trending-image-5.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs\photos\menu\trending-image-5.png" alt=" " class="menuTrendingImgs" />
     </section>
     <section class="menuTrendingItems">
       <h6 class="menuColorBlue menuTrendingSubTitle">👑Top of the month</h6>
       <p>Espresso</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">1.32</p>
-      <img src="..\imgs/photos/menu/trending-image-6.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs/photos/menu/trending-image-6.png" alt=" " class="menuTrendingImgs" />
     </section>
   </article>
   <h2 class="menuTrendingTitile menuColorBlue">Le Menu</h2>
@@ -104,7 +104,7 @@ echo '
     </div>
     <div class="menuItems menuSpanColumnFull">
       <h4 class="menuTitle menuColorBlue">Tea</h4>
-        <img class="menuImgBeans" class="TeaImg" src="..\imgs\photos\menu\beans-1.png"/>
+        <img class="menuImgBeans" class="TeaImg" src="imgs\photos\menu\beans-1.png"/>
       <div class="menuProducts">
         <p>Black Tea</p>
         <p>1.32</p>
