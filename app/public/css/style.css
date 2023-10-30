@@ -20,17 +20,24 @@
 /*header section*/
 
 @keyframes changeBackground {
+
   0%,
   100% {
-    background-image: url("../imgs/photos/pexels-chevanon-photography-302894.jpg"); /* Start and end with the same image */
+    background-image: url("../imgs/photos/pexels-chevanon-photography-302894.jpg");
+    /* Start and end with the same image */
   }
+
   33.33% {
-    background-image: url("../imgs/photos/pexels-maria-tyutina-814264.jpg"); /* Change at 33.33% of the animation duration */
+    background-image: url("../imgs/photos/pexels-maria-tyutina-814264.jpg");
+    /* Change at 33.33% of the animation duration */
   }
+
   66.66% {
-    background-image: url("../imgs/photos/pexels-rathaphon-nanthapreecha-6809019.jpg"); /* Change at 66.66% of the animation duration */
+    background-image: url("../imgs/photos/pexels-rathaphon-nanthapreecha-6809019.jpg");
+    /* Change at 66.66% of the animation duration */
   }
 }
+
 /*Header Styling*/
 .headerMain {
   width: 100%;
@@ -38,15 +45,18 @@
   background-image: url("../imgs/photos/pexels-chevanon-photography-302894.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  animation: changeBackground 24s linear infinite; /* 15s duration, 5s for each image */
+  animation: changeBackground 24s linear infinite;
+  /* 15s duration, 5s for each image */
   position: relative;
   overflow: hidden;
 }
+
 /*Styling of the logo*/
 .headerLogo {
   width: 5rem;
   height: 5rem;
 }
+
 /*Styling navigation bar and the buttons of it*/
 .headerNavBar {
   display: flex;
@@ -54,42 +64,50 @@
   align-items: center;
   padding: 1rem 4rem;
 }
+
 .headerBtn {
   display: flex;
   gap: 2.5rem;
   justify-content: flex-end;
 }
+
 .headerBtns {
   text-decoration: none;
   font-family: "Caveat";
   font-size: 2rem;
   color: #ede5bb;
 }
+
 /*Styling Corners*/
 .headerCorner {
   position: absolute;
   filter: drop-shadow(0 0 2px #ede5bb);
 }
+
 .headerCornerTL {
   rotate: -135deg;
   top: 0;
   left: 0;
 }
+
 .headerCornerTR {
   rotate: -45deg;
   top: 0;
   right: 0;
 }
+
 .headerCornerBL {
   rotate: 45deg;
   bottom: 0;
   right: 0;
 }
+
 .headerCornerBR {
   rotate: 135deg;
   bottom: 0;
   left: 0;
 }
+
 /*Styling the text for the header*/
 .headerText {
   display: flex;
@@ -99,15 +117,18 @@
   margin-top: 3rem;
   line-height: 0.9;
 }
+
 .headerTitle {
   font-family: "Caveat";
   font-size: 18.75rem;
   font-weight: 400;
 }
+
 .headerSubtitle {
   font-family: "Caveat";
   font-size: 4rem;
 }
+
 .headerSubtitle span {
   font-family: "Caveat";
   color: #00657c;
@@ -155,11 +176,9 @@
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(186, 211, 238, 0.75) 0%,
-      rgba(0, 101, 124, 0.94) 100%
-    ),
+      rgba(0, 101, 124, 0.94) 100%),
     url(../imgs/photos/aboutus/pictureofmap.png),
     lightgray -57.549px -6.047px / 106.682% 118.935% no-repeat;
   box-shadow: 0px -14px 60px 0px rgba(0, 0, 0, 0.52);
@@ -203,6 +222,7 @@
   padding-top: 0.5rem;
   gap: 0.5rem;
 }
+
 .copyrightText {
   display: flex;
   color: #ede5bb;
@@ -226,7 +246,7 @@
   color: #ede5bb;
 }
 
-.footerSection > img {
+.footerSection>img {
   width: 25rem;
   height: 15rem;
 }
@@ -280,6 +300,31 @@
   padding: 2.5vh 7vh;
 }
 
+/*WOTM banner*/
+.wotmBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  background-color: #00657c;
+  color: #fefbf4;
+  text-align: center;
+}
+
+.wotmBanner>p {
+  font-family: "Caveat";
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+.wotmBanner>a {
+  font-size: 1.5rem;
+  color: #00657c;
+  background-color: #fefbf4;
+  margin: 0 0 0 4rem;
+}
+
 /* WOTM food items */
 .wotmSection {
   position: relative;
@@ -301,7 +346,7 @@
   color: #00657c;
 }
 
-.wotmFood > img {
+.wotmFood>img {
   max-width: 8rem;
   filter: drop-shadow(0.625rem 1.875rem 1.875rem #69686873);
 }
@@ -312,7 +357,7 @@ img.wotmCoffee {
   filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
 }
 
-.wotmFood > p {
+.wotmFood>p {
   margin-bottom: 2.5rem;
 }
 
@@ -336,7 +381,7 @@ img.wotmCoffee {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.wotmBackground > img {
+.wotmBackground>img {
   opacity: 0.13;
   max-width: 10rem;
 }
@@ -344,9 +389,10 @@ img.wotmCoffee {
 /*Menu Section styling*/
 
 /*Trending orders Styling*/
-.menu{
+.menu {
   position: relative;
 }
+
 .menuTrendingTitile {
   text-align: center;
   font-family: "Caveat";
@@ -354,9 +400,11 @@ img.wotmCoffee {
   margin-bottom: 2rem;
   font-weight: 400;
 }
+
 .menuTrendingTitile:first-child {
   margin-top: 6rem;
 }
+
 .menuTrendingOrders {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -366,6 +414,7 @@ img.wotmCoffee {
   width: 60vw;
   margin-bottom: 5rem;
 }
+
 .menuView {
   display: flex;
   justify-content: center;
@@ -374,9 +423,11 @@ img.wotmCoffee {
   background: linear-gradient(180deg, #f8f3de 0%, #e2ebf6 49.48%, #bad3ee 100%);
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.52);
 }
+
 hr {
   width: 1.5rem;
 }
+
 .menuTrendingItems {
   background-color: white;
   padding: 1.5rem;
@@ -388,6 +439,7 @@ hr {
   position: relative;
   backdrop-filter: blur(1.5rem);
 }
+
 .menuTrendingImgs {
   position: absolute;
   width: 7rem;
@@ -407,6 +459,7 @@ hr {
   flex-wrap: wrap;
   margin: 0 2rem 4rem 2rem;
 }
+
 .menuCategoriesNames {
   text-decoration: none;
   width: 8rem;
@@ -422,6 +475,7 @@ hr {
   letter-spacing: 0.02rem;
   font-weight: 500;
 }
+
 .menuCategoriesNames:hover,
 .menuCategoriesNames:focus {
   background-color: rgba(186, 211, 238, 0.56);
@@ -434,6 +488,7 @@ hr {
   gap: 4rem;
   margin: 0 2.5rem;
 }
+
 .menuItems {
   background-color: white;
   border-radius: 1.5rem;
@@ -442,9 +497,11 @@ hr {
   flex-direction: column;
   justify-content: center;
 }
+
 .menuItems:nth-child(8) {
   margin-bottom: 6rem;
 }
+
 .menuSubitems {
   display: flex;
   flex-direction: column;
@@ -452,6 +509,7 @@ hr {
   align-items: center;
   margin-bottom: 3.5rem;
 }
+
 .menuTitle {
   text-align: center;
   font-size: 3rem;
@@ -468,6 +526,7 @@ hr {
   color: #07143b;
   border-bottom: 0.01rem dotted black;
 }
+
 .menuBtn {
   background-color: white;
   border-radius: 1.5rem;
@@ -476,12 +535,15 @@ hr {
   color: black;
   text-align: center;
 }
+
 .menuSpanColumn2 {
   grid-column: span 2;
 }
+
 .menuSpanColumnFull {
   grid-column: span 3;
 }
+
 .menuSpanRow2 {
   grid-row: span 2;
 }
@@ -524,17 +586,30 @@ hr {
 }
 
 @media (max-width: 1200px) {
+
   /*Menu Section Styling Responsivness*/
   .menuTrendingOrders {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
   }
+
   .menuSubTitle {
     font-size: 0.65rem;
+  }
+
+  /*WOTM STYLING: Fixing sizes*/
+  .wotmBanner>p {
+    font-size: 1.7rem;
+  }
+
+  .wotmBanner>a {
+    font-size: 1rem;
+    margin: 0 0 0 3rem;
   }
 }
 
 @media (max-width: 800px) {
+
   body,
   html {
     width: 100vw;
@@ -548,7 +623,7 @@ hr {
 
   .wotmButton {
     font-size: 1.3rem;
-    padding: 2vh 6vh;
+    padding: 2vh 5vw;
   }
 
   .wotmFood {
@@ -557,6 +632,19 @@ hr {
 
   .wotmWrapper {
     padding: 9vh 7vw 12vh;
+  }
+
+  .wotmBanner {
+    height: 6rem;
+  }
+
+  .wotmBanner>p {
+    font-size: 1.5rem;
+  }
+
+  .wotmBanner>a {
+    font-size: 0.8rem;
+    margin: 0 0 0 2rem;
   }
 
   /*WOTM STYLING: Fixing the background*/
@@ -574,23 +662,26 @@ hr {
   .menuTrendingOrders {
     grid-template-columns: 1fr;
   }
+
   .menuTrendingImgs {
     right: -10%;
   }
+
   .menuSpanRow2 {
     grid-row: 5;
   }
+
   .menuItems,
   .menuSubitems {
     grid-column: 1 / span 3;
   }
+
   .menuSubitems {
     margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 430px) {
-  /*PROPOSING A CHANGE TO MAXWIDTH (400px => 430px)*/
 
   /*WOTM STYLING: Fixing sizes*/
   .wotmH1 {
@@ -609,7 +700,7 @@ hr {
     height: 12rem;
   }
 
-  .wotmFood > img {
+  .wotmFood>img {
     max-width: 6.7rem;
   }
 
@@ -617,8 +708,23 @@ hr {
     padding: 7vh 12vw 9vh;
   }
 
-  .wotmFood > p {
+  .wotmFood>p {
     margin-bottom: 1rem;
+  }
+
+  .wotmBanner {
+    height: 7rem;
+    flex-wrap: wrap;
+  }
+
+  .wotmBanner>p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .wotmBanner>a {
+    font-size: 0.8rem;
+    margin: 0 0 1rem;
   }
 
   /*WOTM STYLING: Fixing the background*/
@@ -634,21 +740,27 @@ hr {
   .menuTrendingTitile {
     font-size: 3rem;
   }
+
   .menuTrendingOrders {
     width: 70vw;
   }
+
   .menuProducts {
     font-size: 0.75rem;
   }
+
   .menuItems {
     padding: 2.5rem;
   }
+
   .menuTitle {
     font-size: 1.5rem;
   }
+
   .menuSubTitle {
     font-size: 0.625rem;
   }
+
   .menuBtn {
     font-size: 0.75rem;
   }
@@ -663,6 +775,7 @@ hr {
   height: auto;
   max-width: 200px;
 }
+
 .menuImgBeans {
   position: absolute;
   right: 0;
