@@ -145,10 +145,10 @@
   align-items: center;
   background: linear-gradient(
       180deg,
-      rgba(186, 211, 238, 0.75) 10%,
+      rgba(186, 211, 238, 0.9) 30%,
       rgba(0, 101, 124, 1) 100%
     ),
-    url(../imgs/photos/aboutus/pictureofmap.png), lightgray no-repeat;
+    url(../imgs/photos/aboutus/pictureofmap.png), no-repeat;
 }
 .aboutusSection {
   width: 100%;
@@ -191,6 +191,7 @@
   display: flex;
   gap: 4rem;
   align-items: center;
+  justify-content: center;
 }
 
 /* Only the content in about us section */
@@ -217,7 +218,12 @@
   justify-content: flex-end;
   gap: 1.5rem;
 }
-li {
+.availableTimes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.listStyleNone {
   list-style: none;
 }
 .quickLinksBox {
@@ -226,7 +232,14 @@ li {
   gap: 1.5rem;
   flex-shrink: 0;
 }
-.quicklinkstext: {
+.quickLinksText:link,
+.quickLinksText:active {
+  text-decoration: none;
+}
+.aboutusFooterText {
+  color: #ede5bb;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 .footerLogo {
   width: 18rem;
@@ -236,8 +249,15 @@ li {
   flex-shrink: 0;
 }
 .aboutusFooter {
-  gap: 6rem;
+  gap: 5.5rem;
   padding-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.footerContactUs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .copyrightText {
   text-align: center;
@@ -245,7 +265,6 @@ li {
   background-color: #012e38;
   padding: 1rem 0;
 }
-/*Ending of the aboutUs and footer part*/
 
 /* WOTM SECTION STYLING */
 .wotmWrapper {
@@ -581,6 +600,44 @@ hr {
     font-size: 1rem;
     margin: 0 0 0 3rem;
   }
+
+  /* Start. About Us: Fixing sizes */
+  #aboutusTitle {
+    font-size: 3.75rem;
+  }
+  #aboutusText {
+    font-size: 1rem;
+  }
+  .aboutusLocation {
+    gap: 3rem;
+  }
+  .aboutusMap {
+    width: 80vw;
+  }
+  .quickLinksBox h3 {
+    font-size: 1.125rem;
+  }
+  .aboutusHoursAndLocation {
+    flex-direction: column;
+  }
+  .aboutusAvailability {
+    gap: 2.5rem;
+  }
+  .footerLogo {
+    width: 14rem;
+    height: 8rem;
+  }
+  .footerParagraph {
+    display: none;
+  }
+  .aboutusFooter {
+    width: 80vw;
+    justify-content: space-between;
+  }
+  .quickLinksBox {
+    gap: 1rem;
+  }
+  /*END*/
 }
 
 @media (max-width: 800px) {
@@ -653,6 +710,25 @@ hr {
   .menuSubitems {
     margin-bottom: 1.5rem;
   }
+
+  /*Start. About us: Fixing Sizing */
+  .aboutusMap {
+    height: 70vh;
+  }
+  .aboutusFooterText {
+    font-size: 0.625rem;
+  }
+  .footerLogo {
+    width: 8rem;
+    height: 4rem;
+  }
+  .quickLinksBox h3 {
+    font-size: 0.875rem;
+  }
+  .aboutusFooter {
+    gap: 1rem;
+  }
+  /*End. About Us: Fixing Sizing*/
 }
 
 @media (max-width: 430px) {
@@ -736,6 +812,24 @@ hr {
 
   .menuBtn {
     font-size: 0.75rem;
+  }
+  /*Start. About us: Fixing Sizing*/
+  #aboutusTitle {
+    font-size: 2.5rem;
+  }
+  #aboutusText {
+    font-size: 0.75rem;
+  }
+  .aboutusFooterTitle {
+    font-size: 1rem;
+  }
+  .aboutusAvailability {
+    font-size: 0.75rem;
+    gap: 1.5rem;
+  }
+  .footerLogo {
+    width: 4.5rem;
+    height: 3rem;
   }
 }
 
