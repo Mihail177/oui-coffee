@@ -2,15 +2,6 @@
 <?php
 function MenuSection(){
 echo '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-</html>
 <article class="menuView">
   <img class="menuImgLemon" src="imgs\photos\menu\limon-1.png" alt="Limon">
   <h2 class="menuTrendingTitile menuColorBlue">Trending orders</h2>
