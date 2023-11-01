@@ -386,6 +386,7 @@ img.wotmCoffee {
 /*Trending orders Styling*/
 .menu {
   position: relative;
+  padding-top: 6rem;
 }
 
 .menuTrendingTitile {
@@ -394,10 +395,6 @@ img.wotmCoffee {
   font-size: 4.375rem;
   margin-bottom: 2rem;
   font-weight: 400;
-}
-
-.menuTrendingTitile:first-child {
-  margin-top: 6rem;
 }
 
 .menuTrendingOrders {
