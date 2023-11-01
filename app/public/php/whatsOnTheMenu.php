@@ -33,6 +33,7 @@
                             <img src="imgs/photos/whatsOnTheMenu/lemonade.png" alt="lemonade">
                         </div>
                 </section>
+                <a href="teaser.html" class="wotmBack"><img src="imgs/left-arrow.png" alt="arrow"></a>
                 <a href="" class="wotmButton">Le Menu</a>
                 <div class="wotmBackground">';?>
                 <?php

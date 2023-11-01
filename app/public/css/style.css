@@ -20,6 +20,7 @@
 /*header section*/
 
 @keyframes changeBackground {
+
   0%,
   100% {
     background-image: url("../imgs/photos/pexels-chevanon-photography-302894.jpg");
@@ -45,6 +46,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   animation: changeBackground 24s linear infinite;
+  z-index: 2;
   /* 15s duration, 5s for each image */
   position: relative;
   overflow: hidden;
@@ -143,18 +145,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(186, 211, 238, 0.9) 30%,
-      rgba(0, 101, 124, 1) 100%
-    ),
+      rgba(0, 101, 124, 1) 100%),
     url(../imgs/photos/aboutus/pictureofmap.png), no-repeat;
 }
+
 .aboutusSection {
   width: 100%;
   background-color: #00657c;
   box-shadow: 0px 0px 60px 12px rgba(0, 0, 0, 0.52) inset;
 }
+
 .aboutusContent {
   display: flex;
   flex-direction: column;
@@ -163,6 +165,7 @@
   padding: 5rem 3rem;
   gap: 0.3rem;
 }
+
 /* only the title which is in the about us content... */
 #aboutusTitle {
   color: #ede5bb;
@@ -178,6 +181,7 @@
   width: 50vw;
   font-size: 1.25rem;
 }
+
 .aboutus {
   padding-top: 3rem;
   display: flex;
@@ -187,6 +191,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .aboutusLocation {
   display: flex;
   gap: 4rem;
@@ -200,6 +205,7 @@
   color: #fefbf4;
   font-weight: 500;
 }
+
 .aboutusMap {
   width: 40rem;
   height: 20rem;
@@ -213,52 +219,63 @@
   gap: 1rem;
   color: #ede5bb;
 }
+
 .aboutusAvailability {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
 }
+
 .availableTimes {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .listStyleNone {
   list-style: none;
 }
+
 .quickLinksBox {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   flex-shrink: 0;
 }
+
 .quickLinksText:link,
 .quickLinksText:active {
   text-decoration: none;
 }
+
 .aboutusFooterText {
   color: #ede5bb;
   font-size: 0.875rem;
   font-weight: 300;
 }
+
 .footerLogo {
   width: 18rem;
   height: 12rem;
 }
+
 .contactUs {
   flex-shrink: 0;
 }
+
 .aboutusFooter {
   gap: 5.5rem;
   padding-bottom: 1rem;
   align-items: center;
   justify-content: center;
 }
+
 .footerContactUs {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .copyrightText {
   text-align: center;
   color: #ede5bb;
@@ -295,6 +312,22 @@
   padding: 2.5vh 7vh;
 }
 
+.wotmBack {
+  background-color: #00657c;
+  position: fixed;
+  z-index: 1;
+  bottom: 12vh;
+  left: 11vw;
+  border-radius: 50rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1.4rem 1.5rem;
+}
+
+.wotmBack img {
+  width: 1rem;
+}
+
 /*WOTM banner*/
 .wotmBanner {
   display: flex;
@@ -307,13 +340,13 @@
   text-align: center;
 }
 
-.wotmBanner > p {
+.wotmBanner>p {
   font-family: "Caveat";
   font-size: 2.5rem;
   font-weight: 100;
 }
 
-.wotmBanner > a {
+.wotmBanner>a {
   font-size: 1.5rem;
   color: #00657c;
   background-color: #fefbf4;
@@ -341,7 +374,7 @@
   color: #00657c;
 }
 
-.wotmFood > img {
+.wotmFood>img {
   max-width: 8rem;
   filter: drop-shadow(0.625rem 1.875rem 1.875rem #69686873);
 }
@@ -352,7 +385,7 @@ img.wotmCoffee {
   filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
 }
 
-.wotmFood > p {
+.wotmFood>p {
   margin-bottom: 2.5rem;
 }
 
@@ -376,7 +409,7 @@ img.wotmCoffee {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.wotmBackground > img {
+.wotmBackground>img {
   opacity: 0.13;
   max-width: 10rem;
 }
@@ -386,7 +419,6 @@ img.wotmCoffee {
 /*Trending orders Styling*/
 .menu {
   position: relative;
-  padding-top: 6rem;
 }
 
 .menuTrendingTitile {
@@ -412,6 +444,7 @@ img.wotmCoffee {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 6rem;
   background: linear-gradient(180deg, #f8f3de 0%, #e2ebf6 49.48%, #bad3ee 100%);
   box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.52);
 }
@@ -578,6 +611,7 @@ hr {
 }
 
 @media (max-width: 1200px) {
+
   /*Menu Section Styling Responsivness*/
   .menuTrendingOrders {
     grid-template-columns: repeat(2, 1fr);
@@ -589,11 +623,11 @@ hr {
   }
 
   /*WOTM STYLING: Fixing sizes*/
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1.7rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 1rem;
     margin: 0 0 0 3rem;
   }
@@ -602,42 +636,54 @@ hr {
   #aboutusTitle {
     font-size: 3.75rem;
   }
+
   #aboutusText {
     font-size: 1rem;
   }
+
   .aboutusLocation {
     gap: 3rem;
   }
+
   .aboutusMap {
     width: 80vw;
   }
+
   .quickLinksBox h3 {
     font-size: 1.125rem;
   }
+
   .aboutusHoursAndLocation {
     flex-direction: column;
   }
+
   .aboutusAvailability {
     gap: 2.5rem;
   }
+
   .footerLogo {
     width: 14rem;
     height: 8rem;
   }
+
   .footerParagraph {
     display: none;
   }
+
   .aboutusFooter {
     width: 80vw;
     justify-content: space-between;
   }
+
   .quickLinksBox {
     gap: 1rem;
   }
+
   /*END*/
 }
 
 @media (max-width: 800px) {
+
   body,
   html {
     width: 100vw;
@@ -666,11 +712,11 @@ hr {
     height: 6rem;
   }
 
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1.5rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 0.8rem;
     margin: 0 0 0 2rem;
   }
@@ -712,23 +758,29 @@ hr {
   .aboutusMap {
     height: 70vh;
   }
+
   .aboutusFooterText {
     font-size: 0.625rem;
   }
+
   .footerLogo {
     width: 8rem;
     height: 4rem;
   }
+
   .quickLinksBox h3 {
     font-size: 0.875rem;
   }
+
   .aboutusFooter {
     gap: 1rem;
   }
+
   /*End. About Us: Fixing Sizing*/
 }
 
 @media (max-width: 430px) {
+
   /*WOTM STYLING: Fixing sizes*/
   .wotmH1 {
     font-size: 1.875rem;
@@ -746,7 +798,7 @@ hr {
     height: 12rem;
   }
 
-  .wotmFood > img {
+  .wotmFood>img {
     max-width: 6.7rem;
   }
 
@@ -754,7 +806,7 @@ hr {
     padding: 7vh 12vw 9vh;
   }
 
-  .wotmFood > p {
+  .wotmFood>p {
     margin-bottom: 1rem;
   }
 
@@ -763,12 +815,12 @@ hr {
     flex-wrap: wrap;
   }
 
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1rem;
     margin-top: 1rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 0.8rem;
     margin: 0 0 1rem;
   }
@@ -810,20 +862,25 @@ hr {
   .menuBtn {
     font-size: 0.75rem;
   }
+
   /*Start. About us: Fixing Sizing*/
   #aboutusTitle {
     font-size: 2.5rem;
   }
+
   #aboutusText {
     font-size: 0.75rem;
   }
+
   .aboutusFooterTitle {
     font-size: 1rem;
   }
+
   .aboutusAvailability {
     font-size: 0.75rem;
     gap: 1.5rem;
   }
+
   .footerLogo {
     width: 4.5rem;
     height: 3rem;
