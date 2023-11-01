@@ -3,10 +3,12 @@
     font-family: CircularStd;
     src: url(../fonts/CircularStd-Book.otf);
 }
+
 @font-face {
     font-family: Caveat;
     src: url(../fonts/Caveat-Regular.ttf);
 }
+
 /* Universal settings */
 * {
     margin: 0;
@@ -15,21 +17,26 @@
     font-family: CircularStd;
     overflow: hidden;
 }
+
 /* Body background colour */
 body {
     background-color: rgb(0, 101, 124);
     box-shadow: -0px -5px 20px inset;
+    height: 100vh;
 }
+
 /* Header container for logo */
 .eventHdrContainer {
     display: flex;
     justify-content: center;
 }
+
 .eventHdrLogo {
     width: 11rem;
     height: 6rem;
     filter: drop-shadow(0 0 10px rgb(255, 244, 174));
 }
+
 /* Events center flexbox */
 .eventMainContainer {
     position: absolute;
@@ -42,6 +49,7 @@ body {
     left: 0;
     right: 0;
 }
+
 /* Events flexbox content */
 .eventMainText {
     font-size: 11rem;
@@ -50,6 +58,7 @@ body {
     color: #FFF7E3;
     text-align: center;
 }
+
 .eventMainMessage {
     font-family: Caveat;
     font-size: 5rem;
@@ -58,6 +67,7 @@ body {
     text-align: center;
     text-shadow: 0 0 30px rgb(255, 244, 174);
 }
+
 .eventMainDescr {
     width: 20rem;
     align-self: center;
@@ -66,6 +76,7 @@ body {
     color: white;
     text-align: center;
 }
+
 .homeBtn {
     padding: 1rem 2rem;
     align-self: center;
@@ -77,14 +88,26 @@ body {
     text-decoration: none;
     border-radius: 6.25rem;
 }
+
 /* Background illustrations grid */
+.gridParent {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
 .bgGrid {
+    position: absolute;
     display: grid;
-    grid-template-columns: repeat(12 , 1fr);
-    grid-template-rows: repeat(10 , 1fr) 3.2rem;
+    bottom: 0;
+    right: 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr) 3.2rem;
     justify-content: space-evenly;
     align-content: space-evenly;
 }
+
 /* Background illustrations */
 .bgIllu {
     width: 7rem;
@@ -92,146 +115,182 @@ body {
     opacity: 0.2;
     transform: rotate(-42deg);
 }
+
 .bgIllu_1 {
     grid-column-start: 6;
     grid-row-start: 10;
 }
+
 .bgIllu_2 {
     grid-column-start: 7;
     grid-row-start: 9;
 }
+
 .bgIllu_3 {
     grid-column-start: 8;
     grid-row-start: 8;
 }
+
 .bgIllu_4 {
     grid-column-start: 8;
     grid-row-start: 10;
 }
+
 .bgIllu_5 {
     grid-column-start: 9;
     grid-row-start: 9;
 }
+
 .bgIllu_6 {
     grid-column-start: 10;
     grid-row-start: 8;
 }
+
 .bgIllu_7 {
     grid-column-start: 11;
     grid-row-start: 7;
 }
+
 .bgIllu_8 {
     grid-column-start: 12;
     grid-row-start: 6;
 }
+
 .bgIllu_9 {
     grid-column-start: 10;
     grid-row-start: 10;
 }
+
 .bgIllu_10 {
     grid-column-start: 11;
     grid-row-start: 9;
 }
+
 .bgIllu_11 {
     grid-column-start: 12;
     grid-row-start: 8;
 }
+
 .bgIllu_12 {
     grid-column-start: 12;
     grid-row-start: 10;
 }
+
 /* Aesthetics test */
 .bgIllu_13 {
     grid-column-start: 9;
     grid-row-start: 7;
 }
+
 .bgIllu_14 {
     grid-column-start: 10;
     grid-row-start: 6;
 }
+
 .bgIllu_15 {
     grid-column-start: 11;
     grid-row-start: 5;
 }
+
 .bgIllu_16 {
     grid-column-start: 12;
     grid-row-start: 4;
 }
+
 .bgIllu_17 {
     grid-column-start: 4;
     grid-row-start: 10;
 }
+
 .bgIllu_18 {
     grid-column-start: 5;
     grid-row-start: 9;
 }
+
 .bgIllu_19 {
     grid-column-start: 6;
     grid-row-start: 8;
 }
+
 .bgIllu_20 {
     grid-column-start: 7;
     grid-row-start: 7;
 }
+
 .bgIllu_21 {
     grid-column-start: 8;
     grid-row-start: 6;
 }
+
 .bgIllu_22 {
     grid-column-start: 9;
     grid-row-start: 5;
 }
+
 .bgIllu_23 {
     grid-column-start: 10;
     grid-row-start: 4;
 }
+
 .bgIllu_24 {
     grid-column-start: 11;
     grid-row-start: 3;
 }
+
 .bgIllu_25 {
     grid-column-start: 12;
     grid-row-start: 2;
 }
+
 .bgIllu_26 {
     grid-column-start: 2;
     grid-row-start: 10;
 }
+
 .bgIllu_27 {
     grid-column-start: 3;
     grid-row-start: 9;
 }
+
 .bgIllu_28 {
     grid-column-start: 4;
     grid-row-start: 8;
 }
+
 .bgIllu_29 {
     grid-column-start: 5;
     grid-row-start: 7;
 }
+
 .bgIllu_30 {
     grid-column-start: 6;
     grid-row-start: 6;
 }
+
 /* Responsiveness tweaks  */
 @media screen and (max-width: 1200px) {
     /* n/a */
 }
+
 @media screen and (max-width: 800px) {
     /* n/a */
 }
+
 @media screen and (max-width: 400px) {
     .eventMainContainer {
         row-gap: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .eventMainText {
         font-size: 5rem;
     }
+
     .eventMainMessage {
         font-size: 4rem;
     }
+
     .homeBtn {
         font-size: 1.2rem;
     }
