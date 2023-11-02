@@ -64,13 +64,14 @@
   align-items: center;
   padding: 1rem 4rem;
 }
-
 .headerBtn {
   display: flex;
   gap: 2.5rem;
   justify-content: flex-end;
 }
-
+.hamburgerBtn {
+  display: none;
+}
 .headerBtns {
   text-decoration: none;
   font-family: "Caveat";
@@ -122,6 +123,7 @@
   font-family: "Caveat";
   font-size: 18.75rem;
   font-weight: 400;
+  text-shadow: 1px 1px 5px #ede5bb;
 }
 
 .headerSubtitle {
@@ -431,6 +433,7 @@ img.wotmCoffee {
   font-size: 4.375rem;
   margin-bottom: 2rem;
   font-weight: 400;
+  z-index: 2;
 }
 
 .menuTrendingOrders {
@@ -613,6 +616,22 @@ hr {
   color: #00000091;
   margin-left: 1.25rem;
 }
+/*Lemon and Beans for the menu page Changed*/
+.menuImgLemon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  width: 9rem;
+}
+
+.menuImgBeans {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: auto;
+  width: 9rem;
+}
 
 @media (max-width: 1200px) {
   /*Header Styling responsivness*/
@@ -713,6 +732,18 @@ hr {
   .headerNavBar {
     padding: 0.75rem 2.5rem;
   }
+  .headerBtn {
+    display: none;
+  }
+  .hamburgerBtn {
+    display: flex;
+    background: none;
+    border: none;
+  }
+  .hamburgerImg {
+    width: 2rem;
+    height: 1.5rem;
+  }
   .scrollBox {
     color: #ede5bb;
     display: flex;
@@ -794,6 +825,9 @@ hr {
 
   .menuSubitems {
     margin-bottom: 1.5rem;
+  }
+  .menuImgBeans {
+    width: 7.5rem;
   }
 
   /*Start. About us: Fixing Sizing */
@@ -911,8 +945,11 @@ hr {
     font-size: 0.625rem;
   }
 
-  .menuBtn {
-    font-size: 0.75rem;
+  .menuImgLemon {
+    width: 6rem;
+  }
+  .menuImgBeans {
+    width: 6rem;
   }
 
   /*Start. About us: Fixing Sizing*/
@@ -937,23 +974,4 @@ hr {
     width: 4.5rem;
     height: 3rem;
   }
-}
-
-/*Lemon and Beans for the menu page*/
-.menuImgLemon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-}
-
-.menuImgBeans {
-  position: absolute;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  max-width: 150px;
 }
