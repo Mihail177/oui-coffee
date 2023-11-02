@@ -15,11 +15,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Circular Std";
+  scroll-behavior: smooth;
 }
 
 /*header section*/
 
 @keyframes changeBackground {
+
   0%,
   100% {
     background-image: url("../imgs/photos/pexels-chevanon-photography-302894.jpg");
@@ -64,14 +66,17 @@
   align-items: center;
   padding: 1rem 4rem;
 }
+
 .headerBtn {
   display: flex;
   gap: 2.5rem;
   justify-content: flex-end;
 }
+
 .hamburgerBtn {
   display: none;
 }
+
 .headerBtns {
   text-decoration: none;
   font-family: "Caveat";
@@ -136,6 +141,7 @@
   color: #00657c;
   font-weight: 700;
 }
+
 .scrollBox {
   display: none;
 }
@@ -149,11 +155,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(186, 211, 238, 0.9) 30%,
-      rgba(0, 101, 124, 1) 100%
-    ),
+      rgba(0, 101, 124, 1) 100%),
     url(../imgs/photos/aboutus/pictureofmap.png), no-repeat;
 }
 
@@ -346,13 +350,13 @@
   text-align: center;
 }
 
-.wotmBanner > p {
+.wotmBanner>p {
   font-family: "Caveat";
   font-size: 2.5rem;
   font-weight: 100;
 }
 
-.wotmBanner > a {
+.wotmBanner>a {
   font-size: 1.5rem;
   color: #00657c;
   background-color: #fefbf4;
@@ -380,7 +384,7 @@
   color: #00657c;
 }
 
-.wotmFood > img {
+.wotmFood>img {
   max-width: 8rem;
   filter: drop-shadow(0.625rem 1.875rem 1.875rem #69686873);
 }
@@ -391,7 +395,7 @@ img.wotmCoffee {
   filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
 }
 
-.wotmFood > p {
+.wotmFood>p {
   margin-bottom: 2.5rem;
 }
 
@@ -415,7 +419,7 @@ img.wotmCoffee {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.wotmBackground > img {
+.wotmBackground>img {
   opacity: 0.13;
   max-width: 10rem;
 }
@@ -458,10 +462,11 @@ img.wotmCoffee {
 
 hr {
   width: 1.5rem;
+  opacity: 20%;
 }
 
 .menuTrendingItems {
-  background-color: white;
+  background-color: #FEFBF4;
   padding: 1.5rem;
   border-radius: 1.5rem;
   display: flex;
@@ -505,7 +510,7 @@ hr {
   box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.06);
   font-size: 0.9rem;
   letter-spacing: 0.02rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .menuCategoriesNames:hover,
@@ -545,7 +550,7 @@ hr {
 .menuTitle {
   text-align: center;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 100;
   font-family: "Caveat";
   margin-bottom: 1.5rem;
 }
@@ -595,11 +600,11 @@ hr {
 }
 
 .menuTrendingPrice {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .menuTrendingSubTitle {
-  font-weight: 450;
+  font-weight: 100;
   font-size: 0.75rem;
 }
 
@@ -616,6 +621,7 @@ hr {
   color: #00000091;
   margin-left: 1.25rem;
 }
+
 /*Lemon and Beans for the menu page Changed*/
 .menuImgLemon {
   position: absolute;
@@ -634,13 +640,16 @@ hr {
 }
 
 @media (max-width: 1200px) {
+
   /*Header Styling responsivness*/
   .headerText {
     margin-top: 6rem;
   }
+
   .headerTitle {
     font-size: 12.5rem;
   }
+
   .headerSubtitle {
     font-size: 3rem;
   }
@@ -656,11 +665,11 @@ hr {
   }
 
   /*WOTM STYLING: Fixing sizes*/
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1.7rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 1rem;
     margin: 0 0 0 3rem;
   }
@@ -716,34 +725,44 @@ hr {
 }
 
 @media (max-width: 800px) {
+
   body,
   html {
     width: 100vw;
     overflow-x: hidden;
   }
+
   /*Header Styling responsivness*/
 
   .headerTitle {
     font-size: 8.5rem;
   }
+
   .headerSubtitle {
     font-size: 1.75rem;
   }
+
   .headerNavBar {
     padding: 0.75rem 2.5rem;
   }
+
   .headerBtn {
     display: none;
   }
+
+
+
   .hamburgerBtn {
     display: flex;
     background: none;
     border: none;
   }
+
   .hamburgerImg {
     width: 2rem;
     height: 1.5rem;
   }
+
   .scrollBox {
     color: #ede5bb;
     display: flex;
@@ -755,10 +774,12 @@ hr {
     transform: translateX(-50%);
     bottom: 2.5%;
   }
+
   .arrowDown {
     width: 1.5rem;
     height: 2rem;
   }
+
   .scrollDownText {
     font-size: 0.875rem;
   }
@@ -785,11 +806,11 @@ hr {
     height: 6rem;
   }
 
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1.5rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 0.8rem;
     margin: 0 0 0 2rem;
   }
@@ -826,6 +847,7 @@ hr {
   .menuSubitems {
     margin-bottom: 1.5rem;
   }
+
   .menuImgBeans {
     width: 7.5rem;
   }
@@ -852,17 +874,20 @@ hr {
     gap: 1rem;
   }
 
-  /*End. About Us: Fixing Sizing*/
+  /* End. About Us: Fixing Sizing */
 }
 
 @media (max-width: 430px) {
+
   /*Header Styling Responsivness*/
   .headerTitle {
     font-size: 7.5rem;
   }
+
   .headerSubtitle {
     font-size: 1.5rem;
   }
+
   .scrollDownText {
     font-size: 0.675rem;
   }
@@ -884,7 +909,7 @@ hr {
     height: 12rem;
   }
 
-  .wotmFood > img {
+  .wotmFood>img {
     max-width: 6.7rem;
   }
 
@@ -892,7 +917,7 @@ hr {
     padding: 7vh 12vw 9vh;
   }
 
-  .wotmFood > p {
+  .wotmFood>p {
     margin-bottom: 1rem;
   }
 
@@ -901,12 +926,12 @@ hr {
     flex-wrap: wrap;
   }
 
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1rem;
     margin-top: 1rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 0.8rem;
     margin: 0 0 1rem;
   }
@@ -922,7 +947,7 @@ hr {
   /*Menu Section Styling Responsivness*/
 
   .menuTrendingTitile {
-    font-size: 3rem;
+    font-size: 1.875rem;
   }
 
   .menuTrendingOrders {
@@ -931,6 +956,14 @@ hr {
 
   .menuProducts {
     font-size: 0.75rem;
+  }
+
+  .menuCategories {
+    position: relative;
+    left: 10vw;
+    width: 100vw;
+    overflow: scroll;
+    flex-wrap: nowrap;
   }
 
   .menuItems {
@@ -948,6 +981,7 @@ hr {
   .menuImgLemon {
     width: 6rem;
   }
+
   .menuImgBeans {
     width: 6rem;
   }
