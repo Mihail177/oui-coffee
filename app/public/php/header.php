@@ -33,6 +33,9 @@ function headerSection(){
            <li class="listStyleNone"><a href="#" class="headerBtns">About Us</a></li>
            <li class="listStyleNone"><a href="#" class="headerBtns">Contact Us</a></li>
          </ul>
+         <button class="hamburgerBtn">
+         <img src="imgs/bars-solid.svg" alt="hamburger" class="hamburgerImg" />
+         </button>
        </nav>
  
        <div class="headerText">
