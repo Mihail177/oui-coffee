@@ -49,14 +49,16 @@ echo '
     </section>
   </article>
   <h2 class="menuTrendingTitile menuColorBlue">Le Menu</h2>
-  <article class="menuCategories">
-    <a href="#" class="menuCategoriesNames">Coffee</a>
-    <a href="#" class="menuCategoriesNames">Tea</a>
-    <a href="#" class="menuCategoriesNames">Pain</a>
-    <a href="#" class="menuCategoriesNames">Sweets</a>
-    <a href="#" class="menuCategoriesNames">Food</a>
-    <a href="#" class="menuCategoriesNames">Cool Drinks</a>
-  </article>
+  <div class="menuScroll">
+    <article class="menuCategories">
+      <a href="#" class="menuCategoriesNames">Coffee</a>
+      <a href="#" class="menuCategoriesNames">Tea</a>
+      <a href="#" class="menuCategoriesNames">Pain</a>
+      <a href="#" class="menuCategoriesNames">Sweets</a>
+      <a href="#" class="menuCategoriesNames">Food</a>
+      <a href="#" class="menuCategoriesNames">Cool Drinks</a>
+    </article>
+  </div>
   <article class="menuContainer">
     <div class="menuItems menuSpanColumn2">
       <h4 class="menuTitle menuColorBlue">Coffee</h4>

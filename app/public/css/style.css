@@ -494,11 +494,25 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  flex-wrap: nowrap;
   margin: 0 2rem 4rem 2rem;
+}
+
+.menuScroll {
+  top: 16vh;
+  left: 10vw;
+  width: 100vw;
+  position: sticky;
+  overflow: scroll;
+}
+
+.menuScroll::-webkit-scrollbar {
+  display: none;
 }
 
 .menuCategoriesNames {
   text-decoration: none;
+  min-width: 8rem;
   padding: 1.5rem;
   background-color: white;
   border-radius: 1.5rem;
@@ -660,6 +674,10 @@ hr {
     margin: 0 0 0 3rem;
   }
 
+  .wotmBack {
+    display: none;
+  }
+
   /* Start. About Us: Fixing sizes */
   #aboutusTitle {
     font-size: 3.75rem;
@@ -710,12 +728,17 @@ hr {
   /*END*/
 }
 
+@media (max-width: 930px) {
+  .menuCategories {
+    justify-content: start;
+  }
+}
+
 @media (max-width: 800px) {
 
   body,
   html {
     width: 100vw;
-    overflow-x: hidden;
   }
 
   /*Header Styling responsivness*/
@@ -934,12 +957,8 @@ hr {
     font-size: 0.75rem;
   }
 
-  .menuCategories {
-    position: relative;
-    left: 10vw;
-    width: 100vw;
-    overflow: scroll;
-    flex-wrap: nowrap;
+  .menuScroll {
+    top: 10vh;
   }
 
   .menuItems {
