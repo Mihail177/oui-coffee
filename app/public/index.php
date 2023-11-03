@@ -38,6 +38,33 @@
             menuCategories.style.display = 'flex'; // Show the menuCategories
         }
       });
+
+      const hamburgerBtn = document.querySelector(".hamburgerBtn");
+      const xBtn = document.querySelector(".xBtn");
+      const headerBtns = document.querySelector(".headerBtn");
+        
+      hamburgerBtn.addEventListener("click", function() {
+          hamburgerBtn.style.display = "none";
+          xBtn.style.display = "flex";
+          headerBtns.style.display = "flex";
+      });
+      
+      xBtn.addEventListener("click", function() {
+        xBtn.style.display = "none";
+        headerBtns.style.display = "none";
+        hamburgerBtn.style.display = "flex";
+      });
+
+      window.addEventListener("resize", function(){
+        if(window.innerWidth > 800){        
+          hamburgerBtn.style.display = "none";
+          xBtn.style.display ="none";
+          headerBtns.style.display = "flex";
+        }else {
+          hamburgerBtn.style.display = "flex";
+          headerBtns.style.display = "none";
+        }
+      });
     </script>
   </body>
 </html>
