@@ -21,6 +21,9 @@ function OpenTheNavBar() {
 
 hamburgerBtn.addEventListener("click", OpenTheNavBar);
 xBtn.addEventListener("click", ClosingTheNavBar);
+leMenuBtn.addEventListener("click", ClosingTheNavBar);
+aboutUsBtn.addEventListener("click", ClosingTheNavBar);
+contactUsBtn.addEventListener("click", ClosingTheNavBar);
 
 window.addEventListener("resize", function () {
   if (window.innerWidth > 800) {
