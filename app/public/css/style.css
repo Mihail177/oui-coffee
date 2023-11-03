@@ -447,7 +447,7 @@ img.wotmCoffee {
   font-size: 4.375rem;
   margin-bottom: 2rem;
   font-weight: 400;
-  z-index: 2;
+  z-index: 1;
 }
 
 .menuTrendingOrders {
@@ -506,7 +506,7 @@ hr {
 }
 
 .menuScroll {
-  z-index: 3;
+  z-index: 1;
   top: 14vh;
   left: 10vw;
   width: 100vw;
@@ -791,9 +791,9 @@ hr {
     border: none;
   }
 
-  .hamburgerImg {
-    width: 2rem;
-    height: 1.5rem;
+  .hamburgerImg,
+  .xImg {
+    width: 2.5rem;
   }
 
   .xBtn {
@@ -801,11 +801,6 @@ hr {
     display: none;
     background: none;
     border: none;
-  }
-
-  .xImg {
-    width: 2rem;
-    height: 1.5rem;
   }
 
   .scrollBox {
@@ -818,6 +813,7 @@ hr {
     left: 50%;
     transform: translateX(-50%);
     bottom: 2.5%;
+    z-index: -1;
   }
 
   .arrowDown {

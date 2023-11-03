@@ -5,6 +5,39 @@ const leMenuBtn = document.querySelector(".leMenuBtn");
 const aboutUsBtn = document.querySelector(".aboutUsBtn");
 const contactUsBtn = document.querySelector(".contactUsBtn");
 
+function ClosingTheNavBar() {
+  xBtn.style.display = "none";
+  headerBtn.style.display = "none";
+  hamburgerBtn.style.display = "flex";
+}
+
+function OpenTheNavBar() {
+  hamburgerBtn.style.display = "none";
+  xBtn.style.display = "flex";
+  headerBtn.style.display = "flex";
+}
+
+hamburgerBtn.addEventListener("click", OpenTheNavBar);
+xBtn.addEventListener("click", ClosingTheNavBar);
+
+// Check the screen width before adding event listeners
+if (window.innerWidth < 800) {
+  leMenuBtn.addEventListener("click", ClosingTheNavBar);
+  aboutUsBtn.addEventListener("click", ClosingTheNavBar);
+  contactUsBtn.addEventListener("click", ClosingTheNavBar);
+}
+
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 800) {
+    hamburgerBtn.style.display = "none";
+    xBtn.style.display = "none";
+    headerBtn.style.display = "flex";
+  } else {
+    hamburgerBtn.style.display = "flex";
+    headerBtn.style.display = "none";
+  }
+});
+
 window.addEventListener("scroll", function () {
   //JS to make navbar change color on scroll
   var navbar = document.querySelector(".headerNavBar"); //making a variable for the navigation bar
@@ -28,33 +61,5 @@ window.addEventListener("scroll", function () {
     menuCategories.style.display = "none"; // Hide the menuCategories
   } else {
     menuCategories.style.display = "flex"; // Show the menuCategories
-  }
-});
-
-function ClosingTheNavBar() {
-  xBtn.style.display = "none";
-  headerBtn.style.display = "none";
-  hamburgerBtn.style.display = "flex";
-}
-function OpenTheNavBar() {
-  hamburgerBtn.style.display = "none";
-  xBtn.style.display = "flex";
-  headerBtn.style.display = "flex";
-}
-
-hamburgerBtn.addEventListener("click", OpenTheNavBar);
-xBtn.addEventListener("click", ClosingTheNavBar);
-leMenuBtn.addEventListener("click", ClosingTheNavBar);
-aboutUsBtn.addEventListener("click", ClosingTheNavBar);
-contactUsBtn.addEventListener("click", ClosingTheNavBar);
-
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 800) {
-    hamburgerBtn.style.display = "none";
-    xBtn.style.display = "none";
-    headerBtn.style.display = "flex";
-  } else {
-    hamburgerBtn.style.display = "flex";
-    headerBtn.style.display = "none";
   }
 });

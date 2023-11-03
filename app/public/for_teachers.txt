@@ -1,0 +1,6 @@
+--Instructions--
+1. Please find in the public folder the main page named index.php.
+2. You can also access the interactive product through any other file in the root folder (that is event.html or teaser.html)
+3. the documents folder contains all documents related to this project.
+4. The design folder contains all design iterations.
+5. The php folders includes the code of induvidual sections on the page, and each section is included in the index.php file.
