@@ -41,28 +41,36 @@
 
       const hamburgerBtn = document.querySelector(".hamburgerBtn");
       const xBtn = document.querySelector(".xBtn");
-      const headerBtns = document.querySelector(".headerBtn");
-        
-      hamburgerBtn.addEventListener("click", function() {
-          hamburgerBtn.style.display = "none";
-          xBtn.style.display = "flex";
-          headerBtns.style.display = "flex";
-      });
-      
-      xBtn.addEventListener("click", function() {
+      const headerBtn = document.querySelector(".headerBtn");
+      const leMenuBtn = document.querySelector(".leMenuBtn");
+      const aboutUsBtn = document.querySelector(".aboutUsBtn");
+      const contactUsBtn = document.querySelector(".contactUsBtn");
+
+      function ClosingTheNavBar(){
         xBtn.style.display = "none";
-        headerBtns.style.display = "none";
+        headerBtn.style.display = "none";
         hamburgerBtn.style.display = "flex";
-      });
+      }
+      function OpenTheNavBar(){
+        hamburgerBtn.style.display = "none";
+        xBtn.style.display = "flex";
+        headerBtn.style.display = "flex";
+      }
+
+      hamburgerBtn.addEventListener("click", OpenTheNavBar);
+      xBtn.addEventListener("click", ClosingTheNavBar);
+      leMenuBtn.addEventListener("click", ClosingTheNavBar);
+      aboutUsBtn.addEventListener("click", ClosingTheNavBar);
+      contactUsBtn.addEventListener("click", ClosingTheNavBar);
 
       window.addEventListener("resize", function(){
         if(window.innerWidth > 800){        
           hamburgerBtn.style.display = "none";
           xBtn.style.display ="none";
-          headerBtns.style.display = "flex";
+          headerBtn.style.display = "flex";
         }else {
           hamburgerBtn.style.display = "flex";
-          headerBtns.style.display = "none";
+          headerBtn.style.display = "none";
         }
       });
     </script>
