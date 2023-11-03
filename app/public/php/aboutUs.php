@@ -8,7 +8,7 @@
     </div>
 </section>  
 
-<section class="aboutus"> 
+<section class="aboutus" id="contact"> 
     <div class="aboutusLocation aboutusHoursAndLocation">
             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3972.9945580207723!2d6.890963164390024!3d52.79529540920947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDQ3JzQwLjAiTiA2wrA1MyczOS4zIkU!5e0!3m2!1sen!2snl!4v1698239686776!5m2!1sen!2snl" class="aboutusMap"></iframe>
         
