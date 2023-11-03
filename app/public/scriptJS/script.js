@@ -6,9 +6,11 @@ const aboutUsBtn = document.querySelector(".aboutUsBtn");
 const contactUsBtn = document.querySelector(".contactUsBtn");
 
 function ClosingTheNavBar() {
-  xBtn.style.display = "none";
-  headerBtn.style.display = "none";
-  hamburgerBtn.style.display = "flex";
+  if (window.innerWidth <= 800) {
+    xBtn.style.display = "none";
+    headerBtn.style.display = "none";
+    hamburgerBtn.style.display = "flex";
+  }
 }
 
 function OpenTheNavBar() {
@@ -19,13 +21,6 @@ function OpenTheNavBar() {
 
 hamburgerBtn.addEventListener("click", OpenTheNavBar);
 xBtn.addEventListener("click", ClosingTheNavBar);
-
-// Check the screen width before adding event listeners
-if (window.innerWidth < 800) {
-  leMenuBtn.addEventListener("click", ClosingTheNavBar);
-  aboutUsBtn.addEventListener("click", ClosingTheNavBar);
-  contactUsBtn.addEventListener("click", ClosingTheNavBar);
-}
 
 window.addEventListener("resize", function () {
   if (window.innerWidth > 800) {
