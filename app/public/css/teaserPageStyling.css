@@ -13,85 +13,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: CircularStd;
-    overflow: hidden;
 }
-/* Background colour */
+/* Background gradient */
 body {
     background-image: linear-gradient(#EEEAD6, #BAD3EE);
-    height: 100vh;
+    position: relative; /* testing */
 }
-/* Header container for logo */
-.teaserHdrContainer {
+/* Header for the logo */
+.teaserHeader {
     display: flex;
     justify-content: center;
 }
-.teaserHdrLogo {
-    width: 11rem;
+.teaserLogo {
     height: 6rem;
 }
-/* Teaser center image */
-.teaserCntrImg {
-    position: absolute;
-    width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -14rem;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-/* Teaser center felxbox */
-.teaserMainContainer {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 26rem;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    line-height: 0.8;
-}
-/* Teaser flexbox content */
-.teaserMainText {
-    font-weight: 450;
-    font-size: 2.25rem;
-    text-align: center;
-    color: #00657C;
-}
-.teaserMainMessage {
-    font-family: Caveat;
-    font-weight: 400;
-    font-size: 8rem;
-    text-align: center;
-    color: #00657C;
-    overflow: visible;
-}
-.homeBtn {
-    font-weight: 450;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
-    color: #FEFBF4;
-    background-color: #00657C;
-    border-radius: 6.25rem;
-    padding: 1.1rem 2rem;
-    margin-top: 2rem;
-}
-/* Background illustrations grid */
-.bgGrid {
+/* Background illustrations */
+.teaserBgGrid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    justify-content: space-evenly;
-    align-content: space-evenly;
+    grid-template-rows: repeat(8,1fr);
+    height: 80vh; /* testing */
+    overflow: hidden;
 }
-/* Background illustrations */
 .bgIllu {
     width: 7rem;
-    height: 5rem;
+    opacity: 0.8;
 }
 .bgIllu_1 {
     transform: rotate(166deg);
@@ -148,7 +94,6 @@ body {
     grid-column-start: 2;
     grid-row-start: 8;
 }
-/* Aesthetics test */
 .bgIllu_12 {
     transform: rotate(-111deg);
     grid-column-start: 4;
@@ -159,108 +104,124 @@ body {
     grid-column-start: 12;
     grid-row-start: 6;
 }
-/* Footer flexbox */
-.teaserFtrContainer {
+/* Teaser content */
+.teaserContent {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    line-height: 0.8;
+}
+.teaserImageButton {
+    width: 40vw;
+    padding-left: 4rem;
+}
+.teaserContentTxt {
+    color: #00657C;
+    font-size: 3vw;
+    font-weight: 500;
+    text-align: center;
+    text-wrap: balance;
+    overflow: visible;
+    margin-top: 1rem;
+}
+.teaserContentMsg {
+    color: #00657C;
+    font-family: Caveat;
+    font-size: 8vw;
+    text-align: center;
+    overflow: visible;
+}
+.gofButton {
+    color: #FEFBF4;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00657C;
+    border-radius: 6rem;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+/* Footer for the promotional banner */
+.teaserFooter {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #00657C;
-    column-gap: 4rem;
-    padding: 2rem;
+    padding: 1.5rem;
+    column-gap: 2rem;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
-/* Footer flexbox content */
-.teaserFtrText {
+.teaserFooterTxt {
     font-family: Caveat;
-    font-weight: 400;
-    font-size: 2.5rem;
     color: #FEFBF4;
+    font-size: 2rem;
     text-align: center;
+    text-wrap: balance;
+    overflow: visible;
 }
-.moreInfoBtn {
-    font-weight: 450;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
+.fomButton {
     color: #00657C;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
     background-color: #FEFBF4;
-    border-radius: 6.25rem;
-    padding: 1.1rem 2rem;
+    border-radius: 6rem;
+    padding: 1rem 2rem;
 }
-/* Reponsiveness tweaks */
+/* Tweaks based on screen width */
 @media screen and (max-width: 1200px) {
-    .teaserCntrImg {
-        width: 35rem;
-        margin-top: -9rem;
-    }
-    .teaserMainContainer {
-        margin-top: 18rem;
-    }
-    .teaserMainText {
-        font-size: 1.25rem;
-    }
-    .teaserMainMessage {
-        font-size: 5rem;
-    }
-    .homeBtn {
-        font-size: 1rem;
-    }
     .bgIllu {
-        opacity: 0.3;
+        opacity: 0.4;
     }
-    .teaserFtrContainer {
+    .teaserImageButton {
+        width: 60vw;
+    }
+    .teaserContentTxt {
+        font-size: 5vw;
+    }
+    .teaserContentMsg {
+        font-size: 12vw;
+    }
+    .teaserFooter {
         flex-direction: column;
-        padding: 1rem;
-    }
-    .teaserFtrText {
-        font-size: 2rem;
-    }
-    .moreInfoBtn {
-        font-size: 1rem;
-        margin-top: 1rem;
+        row-gap: 1rem;
     }
 }
 @media screen and (max-width: 800px) {
-    .teaserCntrImg {
-        width: 25rem;
-        margin-top: -5rem;
+    .teaserImageButton {
+        width: 70vw;
+        margin-left: -2rem;
     }
-    .teaserMainContainer {
-        margin-top: 15rem;
+    .teaserContentTxt {
+        font-size: 6vw;
     }
-    .teaserMainText {
-        font-size: 1.25rem;
-    }
-    .teaserMainMessage {
-        font-size: 5rem;
-    }
-    .homeBtn {
-        font-size: 1rem;
-    }
-    .teaserFtrContainer {
-        padding: 1rem;
-    }
-    .moreInfoBtn {
-        font-size: 1rem;
-        padding: 0.8rem 1rem;
+    .teaserContentMsg {
+        font-size: 14vw;
     }
 }
-@media screen and (max-width: 430px) { 
-    .teaserCntrImg {
-        width: 20rem;
+@media screen and (max-width: 430px) {
+    .teaserImageButton {
+        width: 80vw;
     }
-    .teaserMainContainer {
-        margin-top: 12rem;
+    .teaserContentTxt {
+        font-size: 7vw;
     }
-    .teaserMainText {
+    .teaserContentMsg {
+        font-size: 18vw;
+    }
+    .teaserFooterTxt {
+        font-size: 1.5rem;
+    }
+    .fomButton {
         font-size: 1rem;
-    }
-    .teaserMainMessage {
-       font-size: 4rem;
-    }
-    .teaserFtrText {
-        font-size: 1.5rem;        
     }
 }
