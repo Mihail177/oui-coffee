@@ -29,9 +29,9 @@ function headerSection(){
            <img class="headerLogo" src="imgs/logos/Logos-02.svg" alt="logo" />
          </a>
          <ul class="headerBtn">
-           <li class="listStyleNone"><a href="#menu" class="headerBtns">Le menu</a></li>
-           <li class="listStyleNone"><a href="#aboutUs" class="headerBtns">About Us</a></li>
-           <li class="listStyleNone"><a href="#contact" class="headerBtns">Contact Us</a></li>
+           <li class="listStyleNone"><a href="#menu" class="headerBtns leMenuBtn">Le menu</a></li>
+           <li class="listStyleNone"><a href="#aboutUs" class="headerBtns aboutUsBtn">About Us</a></li>
+           <li class="listStyleNone"><a href="#contact" class="headerBtns contactUsBtn">Contact Us</a></li>
          </ul>
          <button class="hamburgerBtn">
           <img src="imgs/bars-solid.svg" alt="hamburger" class="hamburgerImg" />
