@@ -21,6 +21,7 @@
 /*header section*/
 
 @keyframes changeBackground {
+
   0%,
   100% {
     background-image: url("../imgs/photos/coffee-background.jpeg");
@@ -161,11 +162,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(186, 211, 238, 0.9) 30%,
-      rgba(0, 101, 124, 1) 100%
-    ),
+      rgba(0, 101, 124, 1) 100%),
     url(../imgs/photos/aboutus/pictureofmap.png), no-repeat;
 }
 
@@ -361,13 +360,13 @@
   text-align: center;
 }
 
-.wotmBanner > p {
+.wotmBanner>p {
   font-family: "Caveat";
   font-size: 2.5rem;
   font-weight: 100;
 }
 
-.wotmBanner > a {
+.wotmBanner>a {
   font-size: 1.5rem;
   color: #00657c;
   background-color: #fefbf4;
@@ -406,7 +405,7 @@ img.wotmCoffee {
   filter: drop-shadow(1.875rem 0.625rem 1.875rem #69686873);
 }
 
-.wotmFood > p {
+.wotmFood>p {
   margin-bottom: 2.5rem;
 }
 
@@ -430,7 +429,7 @@ img.wotmCoffee {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.wotmBackground > img {
+.wotmBackground>img {
   opacity: 0.13;
   max-width: 10rem;
 }
@@ -503,11 +502,12 @@ hr {
   align-items: center;
   gap: 2rem;
   flex-wrap: nowrap;
-  margin: 0 2rem 4rem 2rem;
+  margin: 0 2rem 2rem;
 }
 
 .menuScroll {
-  top: 16vh;
+  z-index: 3;
+  top: 14vh;
   left: 10vw;
   width: 100vw;
   position: sticky;
@@ -661,6 +661,7 @@ hr {
 }
 
 @media (max-width: 1200px) {
+
   /*Menu Section Styling Responsivness*/
   .menuTrendingOrders {
     grid-template-columns: repeat(2, 1fr);
@@ -672,11 +673,11 @@ hr {
   }
 
   /*WOTM STYLING: Fixing sizes*/
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1.7rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 1rem;
     margin: 0 0 0 3rem;
   }
@@ -742,6 +743,7 @@ hr {
 }
 
 @media (max-width: 800px) {
+
   body,
   html {
     width: 100vw;
@@ -760,9 +762,11 @@ hr {
   .headerNavBar {
     padding: 0.75rem 2.5rem;
   }
+
   .headerCorner {
     display: none;
   }
+
   .headerBtn {
     display: none;
     flex-direction: column;
@@ -791,12 +795,14 @@ hr {
     width: 2rem;
     height: 1.5rem;
   }
+
   .xBtn {
     z-index: 100;
     display: none;
     background: none;
     border: none;
   }
+
   .xImg {
     width: 2rem;
     height: 1.5rem;
@@ -845,11 +851,11 @@ hr {
     height: 6rem;
   }
 
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1.5rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 0.8rem;
     margin: 0 0 0 2rem;
   }
@@ -917,6 +923,7 @@ hr {
 }
 
 @media (max-width: 430px) {
+
   /*Header Styling Responsivness*/
   .scrollDownText {
     font-size: 0.675rem;
@@ -947,7 +954,7 @@ hr {
     padding: 7vh 12vw 9vh;
   }
 
-  .wotmFood > p {
+  .wotmFood>p {
     margin-bottom: 1rem;
   }
 
@@ -956,12 +963,12 @@ hr {
     flex-wrap: wrap;
   }
 
-  .wotmBanner > p {
+  .wotmBanner>p {
     font-size: 1rem;
     margin-top: 1rem;
   }
 
-  .wotmBanner > a {
+  .wotmBanner>a {
     font-size: 0.8rem;
     margin: 0 0 1rem;
   }
@@ -988,8 +995,12 @@ hr {
     font-size: 0.75rem;
   }
 
+  .menuCategories {
+    margin: 2rem 2rem 4rem;
+  }
+
   .menuScroll {
-    top: 10vh;
+    top: 11vh;
   }
 
   .menuItems {
