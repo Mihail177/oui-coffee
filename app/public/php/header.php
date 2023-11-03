@@ -34,7 +34,10 @@ function headerSection(){
            <li class="listStyleNone"><a href="#contact" class="headerBtns">Contact Us</a></li>
          </ul>
          <button class="hamburgerBtn">
-         <img src="imgs/bars-solid.svg" alt="hamburger" class="hamburgerImg" />
+          <img src="imgs/bars-solid.svg" alt="hamburger" class="hamburgerImg" />
+         </button>
+         <button class="xBtn">
+          <img src="imgs/x-solid.svg" alt="close" class="xImg" />
          </button>
        </nav>
  
