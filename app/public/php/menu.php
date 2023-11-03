@@ -45,21 +45,21 @@ echo '
       <p>Espresso</p>
       <hr />
       <p class="menuColorBlue menuTrendingPrice">1.32</p>
-      <img src="imgs/photos/menu/trending-image-6.png" alt=" " class="menuTrendingImgs" />
+      <img src="imgs/photos/menu/trending-image-6.png" alt=" " class="menuTrendingImgs" id="menu"/>
     </section>
   </article>
-  <h2 class="menuTrendingTitile menuColorBlue">Le Menu</h2>
+  <h2 class="menuTrendingTitile menuColorBlue" id="coffee">Le Menu</h2>
   <div class="menuScroll">
     <article class="menuCategories">
-      <a href="#" class="menuCategoriesNames">Coffee</a>
-      <a href="#" class="menuCategoriesNames">Tea</a>
-      <a href="#" class="menuCategoriesNames">Pain</a>
-      <a href="#" class="menuCategoriesNames">Sweets</a>
-      <a href="#" class="menuCategoriesNames">Food</a>
-      <a href="#" class="menuCategoriesNames">Cool Drinks</a>
+      <a href="#coffee" class="menuCategoriesNames">Coffee</a>
+      <a href="#tea" class="menuCategoriesNames">Tea</a>
+      <a href="#bread" class="menuCategoriesNames">Pain</a>
+      <a href="#sweets" class="menuCategoriesNames">Sweets</a>
+      <a href="#food" class="menuCategoriesNames">Food</a>
+      <a href="#drinks" class="menuCategoriesNames">Cool Drinks</a>
     </article>
   </div>
-  <article class="menuContainer">
+  <article class="menuContainer" id="tea">
     <div class="menuItems menuSpanColumn2">
       <h4 class="menuTitle menuColorBlue">Coffee</h4>
       <div class="menuProducts">
@@ -92,9 +92,9 @@ echo '
         <h3 class="menuColorBlue menuTitle">20% off</h3>
         <p class="menuSubTitle">ALL COFFEE DRINKS</p>
       </div>
-      <a href="#" class="menuBtn menuColorBlue">MORE INFORMATION</a>
+      <a href="event.html" class="menuBtn menuColorBlue">MORE INFORMATION</a>
     </div>
-    <div class="menuItems menuSpanColumnFull">
+    <div class="menuItems menuSpanColumnFull" id="bread">
       <h4 class="menuTitle menuColorBlue">Tea</h4>
         <img class="menuImgBeans" class="TeaImg" src="imgs\photos\menu\beans-1.png"/>
       <div class="menuProducts">
@@ -123,9 +123,9 @@ echo '
         <h3 class="menuColorBlue menuTitle">100%</h3>
         <p class="menuSubTitle">HANDMADE PRODUCTS</p>
       </div>
-      <a href="#" class="menuBtn menuColorBlue">ABOUT US</a>
+      <a href="#aboutUs" class="menuBtn menuColorBlue">ABOUT US</a>
     </div>
-    <div class="menuItems menuSpanColumn2">
+    <div class="menuItems menuSpanColumn2" id="sweets">
       <h4 class="menuTitle menuColorBlue">Croissant (petite pain)</h4>
       <div class="menuProducts">
         <p>Natural/Plain</p>
@@ -164,7 +164,7 @@ echo '
         <p>4.80</p>
       </div>
     </div>
-    <div class="menuItems menuSpanColumn2">
+    <div class="menuItems menuSpanColumn2" id="food">
       <h4 class="menuTitle menuColorBlue">Sweets</h4>
       <div class="menuProducts">
         <p>Eclair</p>
@@ -197,7 +197,7 @@ echo '
         </div>
       </div>
     </div>
-    <div class="menuItems menuSpanColumnFull">
+    <div class="menuItems menuSpanColumnFull" id="drinks">
       <h4 class="menuTitle menuColorBlue">Food</h4>
       <div class="menuProducts">
         <p>Tuna salad</p>
@@ -217,7 +217,7 @@ echo '
       </div>
     </div>
     <div class="menuItems menuSpanColumnFull">
-      <h4 class="menuTitle menuColorBlue">Cool drinks</h4>
+      <h4 class="menuTitle menuColorBlue" id="aboutUs">Cool drinks</h4>
       <div class="menuProducts">
         <p>Home-made lemonade</p>
         <p>3.00</p>

@@ -9,7 +9,7 @@
   <body>
     <main>
       <header><?php include 'php/header.php'; headerSection();?></header>
-      <section><?php include 'php/whatsOnTheMenu.php';?></section>
+      <section><?php include 'php/whatsOnTheMenu.php'; wotm();?></section>
       <article class="menu"><?php include 'php/menu.php'; MenuSection();?></article>
       <section class="aboutUsSection"><?php include 'php/aboutUs.php'; aboutUs();?></section>
     </main>

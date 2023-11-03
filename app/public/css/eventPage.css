@@ -21,7 +21,7 @@
 /* Body background colour */
 body {
     background-color: rgb(0, 101, 124);
-    box-shadow: -0px -5px 20px inset;
+    box-shadow: 0px -5px 5rem inset rgb(0 60 74 / 69%);
     height: 100vh;
 }
 
@@ -79,6 +79,7 @@ body {
 }
 
 .homeBtn {
+    z-index: 1;
     padding: 1rem 2rem;
     align-self: center;
     text-align: center;
